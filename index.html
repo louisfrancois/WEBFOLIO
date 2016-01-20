@@ -23,19 +23,19 @@
 </head>
 <body>
 
-{% include header.html %}
+  {% include header.html %}
 
-{% include navbar.html %}
+  {% include navbar.html %}
 
-{% include projects.html %}
+  {% include projects.html %}
 
-{% include about.html %}
+  {% include about.html %}
 
-{% include contact.html %}
+  {% include contact.html %}
 
-{% include footer.html %}
+  {% include footer.html %}
 
-<script type="text/javascript">
+  <script type="text/javascript">
       (function() {
 
         var documentEl = $(document),
@@ -48,16 +48,8 @@
 
     }) ();
   </script>
-<!--   
-  <script type="text/javascript">
-      window.onscroll = function(ev){
-        var meSection = document.getElementById('meSection'),
-        topHeight = document.getElementById('homeSection').offsetHeight;
 
-        meSection.style.top = (topHeight - document.body.scrollTop / 4) + 'px';
-      };  
+  <script src="/assets/js/functions.js" type="text/javascript">
   </script>
-   -->
-   <script src="/assets/js/functions.js" type="text/javascript"></script>
 </body>
 </html>
