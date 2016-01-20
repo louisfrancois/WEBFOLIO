@@ -1,0 +1,668 @@
+/*
+* {
+    border: 1px solid red !important;
+}*/
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|Jura);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/header-bg-min.jpg) center;
+  filter: blur(50px);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+        header h1 {
+          text-align: center;
+          text-transform: uppercase;
+          color: #fff;
+          font-size: 80px;
+          font-family: Arial;
+          letter-spacing: 0.05em;
+          line-height: 700px;
+        }
+
+        header h1 span {
+          padding: 0.25em;
+          border: #fff solid 10px;
+        }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Poiret One', cursive;
+  color: #424242;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0; 
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+
+/** {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font-family: 'Lato', sans-serif;
+}
+*/
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button, a {
+  min-height: 48px;
+  /*height: 20px;*/
+  min-width: 48px;
+  padding: 0.8em;
+}
+
+
+nav {
+  z-index: -1;
+  background-color: #f3f5f6;
+  width: 100%;
+  /*height: 100%;*/
+  position: absolute;
+  /* This trasform moves the drawer off canvas. */
+  -webkit-transform: translate(0, -800px);
+  transform: translate(0, -800px);
+  /* Optionally, we animate the drawer. */
+  transition: transform 0.3s ease;
+}
+
+hr {
+  border: 0px;
+  height: 0px;
+  border-bottom: 4px solid #bbbbc0;
+}
+
+footer {
+  background: url(../img/header-bg-min.jpg) center center;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+
+
+}
+
+    footer .lockup {
+      padding: 50px 30px;
+    }
+
+    footer .copyright {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: rgba(0,0,0,0.8);
+    }
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+
+
+/*
+ *
+ * Mixins
+ *
+ */
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+
+
+/*
+ *
+ * Header
+ *
+ */
+
+/*.parallax-bg {
+  padding: 300px 0;
+  width: 100%;
+  background-image: url("http://static.thousandwonders.net/Flatirons.original.1106.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.parallax-bg h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 80px;
+  font-family: Arial;
+}*/
+
+.icon-downarrow {
+  line-height: 680px;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+
+/*
+ *
+ * Content
+ *
+ */
+
+
+
+ #content {
+  width: 100%;
+  background: #369eb0;
+
+ }
+
+       .projects {
+        margin: 0 0 0 0;
+        padding: 0 auto;
+        width: 100%;
+        height: 550px;
+        background: #e6e6e6;
+        position: relative;
+
+       }
+
+              .projects h1 {
+                text-align: center;
+                text-transform: uppercase;
+                padding: 30px 0px;
+                color: #367cb5;
+                font-size: 20px;
+                font-family: 'Arial', cursive;
+              }
+
+              .thumb-container {
+                max-width: 980px;
+                margin: 0px auto;
+                padding-bottom: 100px;
+              }
+
+                    .thumb-unit {
+                      width: 22%;
+                      display: block;
+                      float: left;
+                      position: relative;
+                      padding-top: 13%;
+
+                      background-image: url(../img/project_img/oculus-rift-noun-project-james-mayle.png);
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      overflow: hidden;
+                    }
+
+
+                          .thumb-overlay{
+                            position: absolute;
+                            top: 100%;
+                            right: 0px;
+                            bottom: null;
+                            left: 0px;
+                            height:100%;
+                            background: rgba(0, 0, 0, 0.3);
+                            text-align: center;
+                            transition: 0.2s;   
+
+                            display: block;
+                            padding: 20px;
+                            color: white;
+                            font-weight: 300;
+                            text-transform: uppercase;
+                            font-size: 24px;
+                            font-family: 'Arial';
+                            line-height: 1.2;
+
+                          }
+
+                          .thumb-unit:hover .thumb-overlay {
+                            position: absolute;
+                            top: 0%;
+                            right: 0px;
+                            bottom: null;
+                            left: 0px;
+                          }
+
+                          .zoom-icon {
+                            line-height: 5;
+                          }
+
+ /* ------------------------------------------------------------------------------------ */
+
+
+ /*
+ *
+ * Me
+ *
+ */
+
+ .me {
+  margin: 0 0 0 0;
+  padding: 0 auto;
+  width: 100%;
+  height: 700px;
+  background: #36a673;
+  position: relative;
+
+ }
+
+      .me h3 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #367cb5;
+        font-size: 100;
+        font-family: 'Poiret One', cursive;
+      }
+
+      .face-lockup {
+        max-width: 780px;
+        display: flex;
+        background: pink;
+        margin: 0 auto;
+      }
+
+          .face-img {
+            display:inline-block;
+            border-radius: 100%;
+            border: 2px solid #FFF;
+            width: 200px;
+            height: 200px;
+            background: url(../img/face-img.png);
+            background-size: cover;
+          }
+
+          [class^="icon-"] {
+
+          }
+
+
+
+/* ------------------------------------------------------------------------------------ */
+
+ /*
+ *
+ * Contact
+ *
+ */
+
+ .contact {
+  margin: 0 0 0 0;
+  padding: 0 auto;
+  width: 100%;
+  height: 700px;
+  background: #36a150;
+  position: relative;
+
+ }
+
+       .contact h1 {
+        text-align: center;
+        line-height: 500px;
+        text-transform: uppercase;
+        color: #367cb5;
+        font-size: 80px;
+        font-family: 'Poiret One', cursive;
+      }
+
+/* ------------------------------------------------------------------------------------ */
+
+/*.header {
+  padding-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  min-height: 56px;
+  max-height: 90px;
+  transition: min-height 0.3s;
+}*/
+
+.header__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+/*  background-color: #FFF;*/  
+  background-color: #2c3d51;
+  max-height: 90px;
+}
+
+.header__logo {
+  height: 72px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 3em;
+  /*margin: 0.5em 0.25em;*/
+  margin: 0em 0em 0em 0.5em;
+  display: inline-block;
+  font-weight: lighter;
+  color: #666756;
+  color: #FFF;
+  width: 42%;
+  vertical-align: top;
+  /*color: #212121;*/
+}
+
+.position {
+  margin: 0em 0em 0em 0em;
+  color: #FFF;
+  font-size: 18px;
+}
+
+.portrait {
+  margin: 0em 0em 0em 0em;
+  color: #666756;
+  font-size: 18px;
+  width: 16%;
+  height: 200px;
+  display: inline-block;
+  text-align: center;
+
+
+}
+
+.placeholder {
+  font-weight: 300;
+  font-size: 3em;
+  margin: 0em 0em 0em 0em;
+  display: inline-block;
+  font-weight: lighter;
+  color: #FFF;
+  width: 40%;
+  vertical-align: top;
+  text-align: right;
+}
+
+ .avatar {
+  display:inline-block;
+  border-radius: 100%;
+  border: 2px solid #FFF;
+  padding: 1px;
+  width: 180px;
+  height: 180px;
+  background: #FFF;
+  vertical-align: bottom;
+ }
+
+
+ /* ------------------------------------------------------------------------------------ */
+
+
+ /*
+ *
+ * Top Level Navigation
+ *
+ */
+
+/*.navbar {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  background-color: green;
+
+}*/
+
+.nav {
+  width: 100%;
+  background-color: white;
+  padding: 0 400px 0 400px;
+  z-index: 10;
+  opacity: 0.7;
+
+}
+
+      .nav__list {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        height: 50px;
+      }
+
+            .nav__item {
+              box-sizing: border-box;
+              display: inline-block;
+              width: 24%;
+              height: 100%;
+              text-align: center;
+              line-height: 48px;
+              padding: 0;
+              text-transform: uppercase;
+            }
+
+                  .nav a {
+                    text-decoration: none;
+                    color: #616161;
+                  }
+
+                  .nav a:hover {
+                    text-decoration: underline;
+                    color: #212121;
+                  }
+
+
+/*
+ *
+ * Main
+ *
+ */
+
+main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ------------------------------------------------------
+
+.menu {
+  font-size: 2em;
+  margin-top: 16px;
+  padding: 0 0 0 0;
+  float: right;
+}
+
+
+.url {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #bbbbc0;
+}
+
+.position {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: 0px;
+  font-size: 20px;
+
+}
+
+
+.grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+    margin-right: 25px;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+------------------------------------------------------ */
+
+
+/*
+ *
+ * Media Queries
+ *
+ */
+
+@media only screen and (max-width: 500px) {
+  p {
+    display:none;
+  }
+}
+
+@media only print and (max-width: 500px) {
+  p {
+    display:none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+/*  .header__logo {
+    height: 45px;
+    margin-right: 1em;
+    vertical-align: top;
+    margin-top: 12px;
+  }*/
+
+/*  .header__title {
+    font-weight: 300;
+    font-size: 2.5em;
+  }*/
+
+  nav {
+    z-index: -1;
+    background-color: #DDD;
+    width: 100%;
+    /*height: 100%;*/
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(0, -800px);
+    transform: translate(0, -800px);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+  nav.open {
+    z-index: -1;
+    position: relative;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav__item {
+    width:100%;
+  }
+}
+
+/*@media screen and (min-width: 601px) {
+  .menu {
+    visibility: hidden;
+  }
+  .hero {
+    width: 50%;
+    order: -2;
+  }
+  .weather {
+    width: 50%;
+    order: -1;
+  }
+}*/
+
+@media screen and (min-width: 900px) {
+  .content, .navbar {
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .content, .navbar {
+    width: 1850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
