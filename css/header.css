@@ -119,3 +119,7 @@ footer {
       font-size: 12px;
       color: rgba(0,0,0,0.8);
     }
+
+.icon-downarrow {
+  line-height: 680px;
+}

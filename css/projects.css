@@ -1,0 +1,73 @@
+.projects {
+margin: 0 0 0 0;
+padding: 0 auto;
+width: 100%;
+height: 550px;
+background: #e6e6e6;
+position: relative;
+
+}
+
+      .projects h1 {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 30px 0px;
+        color: #367cb5;
+        font-size: 20px;
+        font-family: 'Arial', cursive;
+      }
+
+      .thumb-container {
+        max-width: 980px;
+        margin: 0px auto;
+        padding-bottom: 100px;
+      }
+
+            .thumb-unit {
+              width: 22%;
+              display: block;
+              float: left;
+              position: relative;
+              padding-top: 13%;
+
+              background-image: url(../img/project_img/oculus-rift-noun-project-james-mayle.png);
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              overflow: hidden;
+            }
+
+
+                  .thumb-overlay{
+                    position: absolute;
+                    top: 100%;
+                    right: 0px;
+                    bottom: null;
+                    left: 0px;
+                    height:100%;
+                    background: rgba(0, 0, 0, 0.3);
+                    text-align: center;
+                    transition: 0.2s;   
+
+                    display: block;
+                    padding: 20px;
+                    color: white;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    font-family: 'Arial';
+                    line-height: 1.2;
+
+                  }
+
+                  .thumb-unit:hover .thumb-overlay {
+                    position: absolute;
+                    top: 0%;
+                    right: 0px;
+                    bottom: null;
+                    left: 0px;
+                  }
+
+                  .zoom-icon {
+                    line-height: 5;
+                  }

@@ -1,0 +1,18 @@
+ .contact {
+  margin: 0 0 0 0;
+  padding: 0 auto;
+  width: 100%;
+  height: 700px;
+  background: #36a150;
+  position: relative;
+
+ }
+
+       .contact h1 {
+        text-align: center;
+        line-height: 500px;
+        text-transform: uppercase;
+        color: #367cb5;
+        font-size: 80px;
+        font-family: 'Poiret One', cursive;
+      }
