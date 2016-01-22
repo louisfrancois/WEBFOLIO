@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/animations.css">
 <link rel="stylesheet" href="css/projects.css">
 <div id="projectsSection" class="projects" >
   <h1 id="projectstitle"> PROJECTS </h1>
@@ -6,7 +7,7 @@
 
     {% for project in site.data.settings.projects %}
 
-    <a href="" class="thumb-unit" style="background-image: url(/img/project_img/{{project.folder}}/thumb.png)">    
+    <a href="" class="thumb-unit" id="bg-image" style="background-image: url(/img/project_img/{{project.folder}}/thumb.png)">    
       <div class="thumb-overlay">       
           <strong>{{ project.name }}</strong>
           <div class="zoom-icon">{% include icons/icon-magniglass.html %}

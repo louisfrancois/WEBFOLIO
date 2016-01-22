@@ -2,7 +2,7 @@
 margin: 0 0 0 0;
 padding: 0 auto;
 width: 100%;
-height: 550px;
+height: 600px;
 background: #e6e6e6;
 position: relative;
 
@@ -15,12 +15,15 @@ position: relative;
         color: #367cb5;
         font-size: 20px;
         font-family: 'Arial', cursive;
+        
       }
 
       .thumb-container {
+        display: block;
         max-width: 980px;
         margin: 0px auto;
         padding-bottom: 100px;
+        z-index: 2;
       }
 
             .thumb-unit {
@@ -29,17 +32,24 @@ position: relative;
               float: left;
               position: relative;
               padding-top: 13%;
+              perspective: 300px;
+
+
 
               /*background-image: url(../img/project_img/oculus-rift-noun-project-james-mayle.png);*/
               background-position: center center;
               background-repeat: no-repeat;
               background-size: cover;
+              transition: background-size 0.7s ease-in-out;
+
+              background-size: 300px;
               overflow: hidden;
+              z-index: 2;
             }
 
 
                   .thumb-overlay{
-                    position: absolute;
+                    position: absolute 0% 0px null 0px;
                     top: 100%;
                     right: 0px;
                     bottom: null;
@@ -47,7 +57,15 @@ position: relative;
                     height:100%;
                     background: rgba(0, 0, 0, 0.3);
                     text-align: center;
-                    transition: 0.2s;   
+                    transition: 1s;
+                    display: flex;
+                    overflow: hidden;
+                    opacity: 0;
+
+
+
+                   
+                    align-items: center;
 
                     display: block;
                     padding: 20px;
@@ -61,13 +79,55 @@ position: relative;
                   }
 
                   .thumb-unit:hover .thumb-overlay {
-                    position: absolute;
                     top: 0%;
                     right: 0px;
                     bottom: null;
                     left: 0px;
+                    opacity: 1;
+                  }
+                  
+                  .thumb-unit:hover {
+                    background-size: 150%;
+                    transition: background-size 0.7s ease-in-out;
+                    -moz-transition: all 0.7s ease-in-out;
+                    -webkit-transition: all 0.7s ease-in-out;
+                    transition: all 0.7s ease-in-out;
+                    
                   }
 
+
+                  /*#bg-image:hover {
+                    position: relative;
+                    overflow: hidden;
+                    transform: scale(1.1);
+                    transition:all 0.6s;
+                  }
+*/
+                  /*#bg-image:hover {
+                    position: relative;
+                    -webkit-transform: rotate(30deg);
+                    -moz-transform: rotate(30deg);
+                    -ms-transform: rotate(30deg);
+                    -o-transform: rotate(30deg);
+                    transform: rotate(30deg);
+                    transform: scale(1.1);
+                    transition:all 0.6s;
+                    overflow: hidden;
+                  }*/
+
+                  
                   .zoom-icon {
                     line-height: 5;
                   }
+
+@media screen and (max-width: 850px) {
+  .thumb-unit {
+    width: 50%;
+    padding-top: 17%;
+    display: block;
+    position: relative;
+  } 
+  .projects {
+    height: 860px;
+  }
+}
