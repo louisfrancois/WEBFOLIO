@@ -1,34 +1,34 @@
-<link rel="stylesheet" href="css/animations.css">
+
 <link rel="stylesheet" href="css/projects.css">
-<div id="projectsSection" class="projects section-project" >
-  <h1 id="projectstitle"> PROJECTS </h1>
+<section class="section-project">
+  <div id="projectsSection" class="projects section-project" >
+    <h1 id="projectstitle"> PROJECTS </h1>
 
-  <div class="project-belt">
-    <div class="thumb-wrap">
-      <div class="thumb-container">
-        {% for project in site.data.settings.projects %}
-        <a href="" class="thumb-unit" id="bg-image" style="background-image: url(/img/project_img/{{project.folder}}/thumb.png)">    
-          <div class="thumb-overlay">       
-              <strong>{{ project.name }}</strong>
-              <div class="zoom-icon">{% include icons/icon-magniglass.html %}
-              </div>
-          </div>
-        </a>
-        {% endfor %}</div>
-    </div>
+    <div class="project-belt">
+      <div class="thumb-wrap">
+        <div class="thumb-container">
+          {% for project in site.data.settings.projects %}
+          <a href="" class="thumb-unit" id="bg-image" data-folder="{{project.folder}}" style="background-image: url(/img/project_img/{{project.folder}}/thumb.png)">    
+            <div class="thumb-overlay">       
+                <strong>{{ project.name }}</strong>
+                <div class="zoom-icon">{% include icons/icon-magniglass.html %}</div>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
 
-    <div class="project-wrap">
-      <div class="project-container">
-        <div class="project-return">{% include icons/icon-arrowleft.html %}</div>
-        <h4>Do Work</h4>
-        <div style="width: 600px; height: 500px; background: #ccc;"></div>
-        <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-        <div style="width: 600px; height: 500px; background: #ccc;"></div>
-        <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-        <div style="width: 600px; height: 500px; background: #ccc;"></div>
-        <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-        <div style="width: 600px; height: 500px; background: #ccc;"></div>
-        <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p></div>
+      <div class="project-wrap">
+        <div class="project-container">
+          <div class="project-return">{% include icons/icon-arrowleft.html %}</div>
+            <h4 class="project-title"> Typo International Design Talks</h4>
+            <div style="width: 600px; height: 500px; background: #ccc;"></div>
+            <p>Etiam ar risus et justo dignissm congue. Donec congue lacinia dui, a.</p>
+          <div class="project-load"></div>
+        </div>
+      </div>
+
+
     </div>
   </div>
-</div>
+</section>

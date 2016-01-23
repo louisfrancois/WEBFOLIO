@@ -1,3 +1,19 @@
+.section-project {
+  overflow-x: hidden;
+
+}
+
+.project-belt {
+  width: 200%;
+  position: relative; 
+  left: -100%;
+}
+
+.thumb-wrap, .project-wrap {
+  width: 50%;
+  float: left;
+}
+
 .projects {
 margin: 0 0 0 0;
 padding: 0 auto;
@@ -131,3 +147,52 @@ position: relative;
     height: 860px;
   }
 }
+
+.project-container {
+  max-width: 600px;
+  margin: 0px auto;
+  position: relative;
+}
+
+    .project-container img {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .project-container h4 {
+      margin-bottom: 20px;
+      color: #767676;
+      text-transform: uppercase;
+    }
+
+    .project-return {
+      size: 40px;
+      cursor: pointer;
+      opacity:0.5;
+      position: absolute;
+      top: -8px;
+      right: 615px;
+      left: null;
+      bottom: null;
+      
+  
+      fill: rgba(0,0,0,0.4);
+    }
+
+    @media (max-width: 740px) {
+
+      .project-container h4 {
+        margin-left: 30px;
+      }
+
+      .project-return {
+        position: absolute;
+        /*right: 580px;*/
+        left: -10px;
+
+      }
+    }
+
+    .project-return:hover {
+      opacity: 1;
+    }
