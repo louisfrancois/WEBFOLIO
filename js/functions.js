@@ -22,14 +22,14 @@ function projectBelt() {
 
 	$('.thumb-unit').click(function() {
 
-		$('.project-belt').css('left','-100%');
+		$('.project-belt').css('left', '-100%');
 		$('.project-container').show();
 	});
 
 	$('.project-return').click(function() {
 
 		$('.project-belt').css('left', '0%');
-		$('.project-container').hide(800);
+		$('.project-container').hide(2000);
 	})
 
 }

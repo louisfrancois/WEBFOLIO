@@ -6,7 +6,8 @@
 .project-belt {
   width: 200%;
   position: relative; 
-  left: -100%;
+  left: 0%;
+  transition: 1s;
 }
 
 .thumb-wrap, .project-wrap {

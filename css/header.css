@@ -46,7 +46,6 @@ body, html {
 body {
   font-family: 'Poiret One', cursive;
   color: #424242;
-  text-align: left;
 }
 
 h1, h2, h3, h4, h5 {
@@ -121,5 +120,18 @@ footer {
     }
 
 .icon-downarrow {
+  position: fixed;
+  left:45%;
+  bottom: 0;
   line-height: 680px;
+  /*text-align: center;*/
+
+  -webkit-animation:icon-downarrow 1.5s infinite;
+}
+
+@-webkit-keyframes icon-downarrow {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
 }
