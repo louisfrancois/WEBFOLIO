@@ -2,6 +2,12 @@ $(function() {
 	smoothScroll(300);
 	projectBelt();
 	workLoad();
+
+	$('.thumb-unit').click(function(e){
+        e.preventDefault();
+        projectBelt();
+    });
+
 });
 
 function smoothScroll (duration) {
@@ -30,7 +36,7 @@ function projectBelt() {
 
 		$('.project-belt').css('left', '0%');
 		$('.project-container').hide(2000);
-	})
+	});
 
 }
 
@@ -42,11 +48,11 @@ function workLoad() {
 
 		var $this = $(this),
 			newTitle = $this.find('strong').text(),
-			newfolder = $this.data('folder'),
+			newFolder = $this.data('folder'),
 			spinner = '<div class="loader">Loading...</div>',
-			newHTML = '/project/' + newfolder + '.html';
+			newHTML = '/project/' + newFolder + '.html';
 			
-		$('.project-load').hmtl(spinner).load(newHTML);
+		$('.project-load').html(spinner).load(newHTML);
 		$('.project-title').text(newTitle);
 
 

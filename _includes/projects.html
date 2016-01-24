@@ -1,7 +1,7 @@
 
 <link rel="stylesheet" href="css/projects.css">
 <link rel="stylesheet" href="css/spinner.css">
-<section class="section-project">
+<section class="section-project">   
   <div id="projectsSection" class="projects section-project" >
     <h1 id="projectstitle"> PROJECTS </h1>
 
@@ -9,7 +9,7 @@
       <div class="thumb-wrap">
         <div class="thumb-container">
           {% for project in site.data.settings.projects %}
-          <a href="" class="thumb-unit" id="bg-image" data-folder="{{project.folder}}" style="background-image: url(/img/project_img/{{project.folder}}/thumb.png)">    
+          <a href="" class="thumb-unit" id="bg-image" data-folder="{{project.folder}}" style="background-image: url(/img/project-img/{{project.folder}}/thumb.png)">    
             <div class="thumb-overlay">       
                 <strong>{{ project.name }}</strong>
                 <div class="zoom-icon">{% include icons/icon-magniglass.html %}</div>
