@@ -38,6 +38,12 @@ function projectBelt() {
 		$('.project-container').hide(2000);
 	});
 
+	$('#projects').click(function() {
+
+		$('.project-belt').css('left', '0%');
+		$('.project-container').hide(2000);
+	});
+
 }
 
 function workLoad() {
