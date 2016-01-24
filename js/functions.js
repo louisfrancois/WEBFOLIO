@@ -36,7 +36,7 @@ function projectBelt() {
 
 function workLoad() {
 
-	$.ajaxSetup({ cache: false });
+	$.ajaxSetup({ cache: true });
 
 	$('.thumb-unit').click(function() {
 
@@ -44,7 +44,8 @@ function workLoad() {
 			newTitle = $this.find('strong').text(),
 			newfolder = $this.data('folder'),
 			spinner = '<div class="loader">Loading...</div>',
-			newHTML = '/project/'+ newfolder + '.html';
+			newHTML = '/project/' + newfolder + '.html';
+			
 		$('.project-load').hmtl(spinner).load(newHTML);
 		$('.project-title').text(newTitle);
 

@@ -162,8 +162,10 @@ position: relative;
 
     .project-container h4 {
       margin-bottom: 20px;
+      margin-top:  0px;
       color: #767676;
       text-transform: uppercase;
+
     }
 
     .project-return {
