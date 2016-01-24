@@ -166,6 +166,13 @@ footer {
   line-height: 680px;
 }
 
+.subsection1 {
+  height: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(../img/bg-profilepic-min.jpg) center center;
+  background-attachment: fixed;
+}
 /* ------------------------------------------------------------------------------------ */
 
 
