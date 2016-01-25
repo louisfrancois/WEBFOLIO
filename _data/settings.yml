@@ -64,29 +64,48 @@ projects:
 
 
 #-------------------------------
-# Clients Section
+# Events Section
 
-clients:
-- {avatar: 'face-aaroni.jpg',
-  name: 'Scott Summers',
-  title: 'Director of Design, OnToText Ind.',
-  quote: '<p><strong>While we all felt that Travis was a great</strong> asset to our team — and really worked hard to understand our products from the point of view of the customer — we also all agree he should shower more often.</p>',
-  logo: 'logo1.png'}
-- {avatar: 'face-atariboy.jpg',
-  name: 'Hank McCoy',
-  title: 'Eater of Salad, Antartica Int.',
-  quote: '<p><strong>Working with Travis was the highlight of my career.</strong> Other moments of note were collecting the largest number of paperclips in the office, and winning a trophy for saying "uh huh, and then what?" 30 times in a row to my girlfriend without her noticing.</p>',
-  logo: 'logo2.png'}
-- {avatar: 'face-jackiesaik.jpg',
-  name: 'Stacy Lang',
-  title: 'Social Media Girl, Quebec Int.',
-  quote: '<p><strong>Yea, I guess hes good at computers or something,</strong> but let me ask you this: If a cat always lands on its feet, and buttered bread always lands butter side down, what would happen if you tied buttered bread on top of a cat?</p>',
-  logo: 'logo3.png'}
-- {avatar: 'face-teleject.jpg',
-  name: 'Cleatus Cassidy',
-  title: 'VP of Helmut, Lorem Sorem LLC.',
-  quote: '<p><strong>Back in old country</strong> only nerds who is playing on computers. Now all bros is wanting to make codes and junk. I lost foot in war. You dont see girls asking me about homework.</p>',
-  logo: 'logo4.png'}
+experiences:
+- {company: DragonDev,
+  location: Boulder,
+  state: CO,
+  role: Junior Web Application Developer,
+  work1: Improving user-friendliness of one of the company’s web app tools and updating the interface to follow the company’s standards.,
+  work2: Building a mobile web application for a company’s client and helped fixing bugs on other web applications.,
+  time: September 2013 - May 2014,
+  classname: timeline
+}
+
+- {company: ASCE National Student Steel Bridge Competition,
+location: Boulder,
+state: CO,
+role: Bridge Constructor,
+work1: Helped fabricate a one-tenth scale steel bridge as part of a team of students at the University of Colorado Boulder.,
+work2: Practiced structural design/analysis and project management and learned fabrication techniques while gaining appreciation for the strength and constructability of steel.,
+time: February 2013 - April 2014,
+classname: timeline-inverted
+}
+
+- {company: Water Waste Issue (class project),
+location: Boulder,
+state: CO,
+role: Group Project Member,
+work1: Analyzed water waste issues in Williams Village as member of the Residential Academic Program (RAP). Project exhibited at the yearly science expo,
+work2: Collected data on water distribution in Williams Village housing facilities (part of CU campus) and assessed residents’ clean water usage through conducted surveys.,
+work3: Designed a water-efficient facility system to help conserve clean water used by students through the use of grey water and sustainable water-consumption.,
+time: October 2011 - December 2011,
+classname: timeline
+}
+
+- {company: Chemical Lab Experiments,
+location: Libreville,
+state: GABON,
+role: Participant,
+work1: Conducted weekly high-school advanced chemistry lab experiments in preparation for the French national yearly contest the ‘Olympiades de Chimie’ (chemistry Olympics) in Blaise Pascal High School over 45 hours in total on the course of 3 months.,
+time: October 2011 - December 2011,
+classname: timeline-inverted
+}
 
 
 #-------------------------------

@@ -1,3 +1,6 @@
+{% for experience in site.data.settings.experiences %}
+
+<li class="{{ experience.classname }}"> 
 <div class="timeline-badge">
     <a>
     	<i class="fa fa-circle" id=""></i>
@@ -5,12 +8,16 @@
     </div>
     <div class="timeline-panel">
     <div class="timeline-heading">
-        <h4>Timeline Event</h4>
+        <h4> {{ experience.company }} </h4>
     </div>
     <div class="timeline-body">
-        <p>Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+        <p> {{ experience.work1 }} </p>
     </div>
     <div class="timeline-footer">
-        <p class="text-right">Feb-21-2014</p>
+        <p class="text-right"> {{ experience.date}} </p>
     </div>
 </div>
+</li>
+
+
+{% endfor %}
