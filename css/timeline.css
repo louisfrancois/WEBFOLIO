@@ -20,6 +20,8 @@ h2 {
     margin: 0 auto;
 /*    margin-left: 10%;*/
 }
+
+/**** very small div ****/
 .timeline:before {
     top: 0;
     bottom: 0;
@@ -30,6 +32,8 @@ h2 {
     left: 50%;
     margin-left: -1.5px;
 }
+
+
 .timeline > li {
     margin-bottom: 20px;
     position: relative;
@@ -37,20 +41,30 @@ h2 {
     float: left;
     clear: left;
 }
+
+
 .timeline > li:before, .timeline > li:after {
     content:" ";
     display: table;
 }
+
+
 .timeline > li:after {
     clear: both;
 }
+
+
 .timeline > li:before, .timeline > li:after {
     content:" ";
     display: table;
 }
+
+
 .timeline > li:after {
     clear: both;
 }
+
+
 .timeline > li > .timeline-panel {
     width: calc(100% - 25px);
     width: -moz-calc(100% - 25px);
@@ -64,6 +78,9 @@ h2 {
     box-shadow: 0 1px 6px rgba(0,0,0,0.175);
     justify-content: center;
 }
+
+
+
 .timeline > li > .timeline-panel:before {
     position: absolute;
     top: 26px;
@@ -152,8 +169,10 @@ h2 {
 }
 .no-float {
     float: none !important;
-}
-@media (max-width: 767px) {
+}*/
+
+
+/*@media (max-width: 767px) {
     ul.timeline:before {
         left: 40px;
     }
