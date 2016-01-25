@@ -2,7 +2,7 @@
   margin: 0 0 0 0;
   padding: 0 auto;
   width: 100%;
-  height: 700px;
+  height: 800px;
   background: #fff;
   position: relative;
 
@@ -43,9 +43,10 @@
         }
 
     .blurb {
-        max-width: 620px;
+        max-width: 900px;
         padding: 0 15px;
         margin: 50px auto;
         font-size: 20px;
+        line-height: 200%;
 
     }
