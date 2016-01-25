@@ -8,31 +8,44 @@
 
  }
 
-      .me h3 {
-        text-align: center;
-        text-transform: uppercase;
-        color: #367cb5;
-        font-size: 100;
-        font-family: 'Poiret One', cursive;
-      }
+    .me h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #367cb5;
+    font-size: 100;
+    font-family: 'Poiret One', cursive;
+    padding: 100px 0 60px;
+    }
 
-      .face-lockup {
-        max-width: 780px;
-        display: flex;
-        background: pink;
-        margin: 0 auto;
-      }
+    .face-lockup {
+    max-width: 780px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 
-          .face-img {
-            display:inline-block;
-            border-radius: 100%;
-            border: 2px solid #FFF;
-            width: 200px;
-            height: 200px;
-            background: url(../img/face-img.png);
-            background-size: cover;
-          }
+    }
 
-          [class^="icon-"] {
+        .face-img {
+        size: 200px;
+        background: url(../img/face-img.png);
 
-          }
+        border-radius: 100%;
+        border: 2px solid #FFF;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        display:inline-block;
+        }
+
+        [class^="icon-"] {
+            size: 100px;
+        }
+
+    .blurb {
+        max-width: 620px;
+        padding: 0 15px;
+        margin: 50px auto;
+        font-size: 20px;
+
+    }

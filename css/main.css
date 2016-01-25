@@ -173,6 +173,15 @@ footer {
   background: url(../img/bg-profilepic-min.jpg) center center;
   background-attachment: fixed;
 }
+
+.subsection2 {
+  height: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(../img/bg-music3-min.jpg) center center;
+  background-attachment: fixed;
+}
+
 /* ------------------------------------------------------------------------------------ */
 
 
@@ -266,51 +275,6 @@ footer {
 
  /* ------------------------------------------------------------------------------------ */
 
-
- /*
- *
- * Me
- *
- */
-
- .me {
-  margin: 0 0 0 0;
-  padding: 0 auto;
-  width: 100%;
-  height: 700px;
-  background: #36a673;
-  position: relative;
-
- }
-
-      .me h3 {
-        text-align: center;
-        text-transform: uppercase;
-        color: #367cb5;
-        font-size: 100;
-        font-family: 'Poiret One', cursive;
-      }
-
-      .face-lockup {
-        max-width: 780px;
-        display: flex;
-        background: pink;
-        margin: 0 auto;
-      }
-
-          .face-img {
-            display:inline-block;
-            border-radius: 100%;
-            border: 2px solid #FFF;
-            width: 200px;
-            height: 200px;
-            background: url(../img/face-img.png);
-            background-size: cover;
-          }
-
-          [class^="icon-"] {
-
-          }
 
 
 

@@ -9,7 +9,11 @@ $(function() {
     });
 
     $(function(){
-	  $('#Contains').mixItUp();
+	  $('#Contains').mixItUp({
+	  	animation: {
+	  		duration: 1200
+	  	}
+	  });
 	});
 
 	$('.filter').click(function(e){
