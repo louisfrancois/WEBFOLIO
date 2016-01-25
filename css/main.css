@@ -72,7 +72,7 @@ ul {
   margin: 0;
 }
 
-button, a {
+a {
   min-height: 48px;
   /*height: 20px;*/
   min-width: 48px;

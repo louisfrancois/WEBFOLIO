@@ -8,6 +8,15 @@ $(function() {
         projectBelt();
     });
 
+    $(function(){
+	  $('#Contains').mixItUp();
+	});
+
+	$('.filter').click(function(e){
+        e.preventDefault();
+        projectBelt();
+    });
+
 });
 
 function smoothScroll (duration) {
@@ -64,3 +73,4 @@ function workLoad() {
 
 	});
 }
+

@@ -5,19 +5,28 @@
   <div id="projectsSection" class="projects section-project" >
     <h1 id="projectstitle"> PROJECTS </h1>
 
-    <div class="project-belt">
-      <div class="thumb-wrap">
-        <div class="thumb-container">
-          {% for project in site.data.settings.projects %}
-          <a href="" class="thumb-unit" id="bg-image" data-folder="{{project.folder}}" style="background-image: url(/img/project-img/{{project.folder}}/thumb.png)">    
-            <div class="thumb-overlay">       
-                <strong>{{ project.name }}</strong>
-                <div class="zoom-icon">{% include icons/icon-magniglass.html %}</div>
-            </div>
-          </a>
-          {% endfor %}
+    <div class="controls">
+      <label>Filter:</label>
+      <button class="filter" data-filter="all">All</button>
+      <button class="filter" data-filter=".category-1">Category 1</button>
+      <button class="filter" data-filter=".category-2">Category 2</button>
+      <button class="filter" data-filter=".category-3">Category 3</button>
+      <button class="filter" data-filter=".category-4">Category 4</button>
+    </div>
+    <div class="project-belt" id="Contains">
+      
+        <div class="thumb-wrap">
+          <div class="thumb-container">
+            {% for project in site.data.settings.projects %}
+            <a href="" class="mix thumb-unit {{ project.category }}" id="bg-image" data-folder="{{project.folder}}" data-myorder ="{{ project.data-order }}" style="background-image: url(/img/project-img/{{project.folder}}/thumb.png)">    
+              <div class="thumb-overlay">       
+                  <strong>{{ project.name }}</strong>
+                  <div class="zoom-icon">{% include icons/icon-magniglass.html %}</div>
+              </div>
+            </a>
+            {% endfor %}
+          </div>
         </div>
-      </div>
 
       <div class="project-wrap">
         <div class="project-container">
