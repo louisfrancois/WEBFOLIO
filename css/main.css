@@ -182,6 +182,14 @@ footer {
   background-attachment: fixed;
 }
 
+.subsection3 {
+  height: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(../img/bg-music2-min.jpg) center center;
+  background-attachment: fixed;
+}
+
 /* ------------------------------------------------------------------------------------ */
 
 
