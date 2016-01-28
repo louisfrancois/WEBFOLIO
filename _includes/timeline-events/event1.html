@@ -1,0 +1,23 @@
+{% for experience in site.data.settings.experiences %}
+
+<li class="{{ experience.classname }}"> 
+<div class="timeline-badge">
+    <a>
+    	<i class="fa fa-circle" id=""></i>
+    </a>
+    </div>
+    <div class="timeline-panel">
+    <div class="timeline-heading">
+        <h4> {{ experience.company }} </h4>
+    </div>
+    <div class="timeline-body">
+        <p> {{ experience.work1 }} </p>
+    </div>
+    <div class="timeline-footer">
+        <p class="text-right"> {{ experience.time }} </p>
+    </div>
+</div>
+</li>
+
+
+{% endfor %}
