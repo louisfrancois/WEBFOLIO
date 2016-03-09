@@ -1,11 +1,11 @@
 $(function() {
 	smoothScroll(300);
-	projectBelt();
+	
 	workLoad();
 
 	$('.thumb-unit').click(function(e){
         e.preventDefault();
-        projectBelt();
+        
     });
 
     $(function(){
@@ -18,7 +18,7 @@ $(function() {
 
 	$('.filter').click(function(e){
         e.preventDefault();
-        projectBelt();
+        
     });
 
 });
@@ -37,27 +37,27 @@ function smoothScroll (duration) {
 	});
 }
 
-function projectBelt() {
+// function projectBelt() {
 
-	$('.thumb-unit').click(function() {
+// 	$('.thumb-unit').click(function() {
 
-		$('.project-belt').css('left', '-100%');
-		$('.project-container').show();
-	});
+// 		$('.project-belt').css('left', '-100%');
+// 		$('.project-container').show();
+// 	});
 
-	$('.project-return').click(function() {
+// 	$('.project-return').click(function() {
 
-		$('.project-belt').css('left', '0%');
-		$('.project-container').hide(2000);
-	});
+// 		$('.project-belt').css('left', '0%');
+// 		$('.project-container').hide(2000);
+// 	});
 
-	$('#projects').click(function() {
+// 	$('#projects').click(function() {
 
-		$('.project-belt').css('left', '0%');
-		$('.project-container').hide(2000);
-	});
+// 		$('.project-belt').css('left', '0%');
+// 		$('.project-container').hide(2000);
+// 	});
 
-}
+// }
 
 function workLoad() {
 
@@ -65,14 +65,19 @@ function workLoad() {
 
 	$('.thumb-unit').click(function() {
 
-		var $this = $(this),
-			newTitle = $this.find('strong').text(),
-			newFolder = $this.data('folder'),
-			spinner = '<div class="loader">Loading...</div>',
-			newHTML = '/project/' + newFolder + '.html';
+		// var $this = $(this),
+		// 	newTitle = $this.find('strong').text(),
+		// 	newFolder = $this.data('folder'),
+		// 	spinner = '<div class="loader">Loading...</div>',
+		// 	newHTML = '/project/' + newFolder + '.html';
 			
-		$('.project-load').html(spinner).load(newHTML);
-		$('.project-title').text(newTitle);
+		// $('.pop_details').html(spinner).load(newHTML);
+		// $('.project-title').text(newTitle);
+
+		var spinner = '<div class="loader">Loading...</div>',
+			newHTML = '/project/project2.html';
+			
+		$('.pop_details').html(spinner).load(newHTML);
 
 
 	});

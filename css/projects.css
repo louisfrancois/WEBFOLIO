@@ -86,19 +86,32 @@ button + label{
 /* ------------------------------------------------ */
 
 .section-project {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
+  overflow-x: visible;
 
 }
 
-.project-belt {
+/*.project-belt {
   width: 200%;
+  position: relative; 
+  left: 0%;
+  transition: 1s;
+}*/
+
+.project-belt {
+  width: 100%;
   position: relative; 
   left: 0%;
   transition: 1s;
 }
 
-.thumb-wrap, .project-wrap {
+/*.thumb-wrap, .project-wrap {
   width: 50%;
+  float: left;
+}
+*/
+.thumb-wrap {
+  width: 100%;
   float: left;
 }
 
@@ -285,6 +298,18 @@ position: relative;
 
     .project-return:hover {
       opacity: 1;
+    }
+
+    /* ------------- POP DETAIL CARD -------------- */
+
+    .pop_details { 
+      position: absolute;
+      width: 70%;
+      height: 700px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      background-color: blue;
     }
 
 
