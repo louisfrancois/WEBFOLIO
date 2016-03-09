@@ -256,18 +256,33 @@ position: relative;
     }
 
     .project-return {
-      size: 40px;
+      size: 200px;
       cursor: pointer;
       opacity:0.5;
       position: absolute;
-      top: -8px;
-      right: 615px;
+      top: 100px;
+      right: 700px;
+      left: null;
+      bottom: null;
+      overflow: auto;
+      
+  
+      fill: rgba(0,0,0,0.4);
+    }
+
+    /*.project-return {
+      size: 200px;
+      cursor: pointer;
+      opacity:0.5;
+      position: fixed;
+      top: 480px;
+      right: 1400px;
       left: null;
       bottom: null;
       
   
       fill: rgba(0,0,0,0.4);
-    }
+    }*/
 
     @media (max-width: 740px) {
 
@@ -287,4 +302,23 @@ position: relative;
       opacity: 1;
     }
 
+/***********************************************************************************************/
+/* Button */
+/***********************************************************************************************/
 
+.go-top {
+
+  position: fixed;
+  bottom: 50px;
+  right: 400px;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  padding: 1em;
+  display: none;
+}
+
+.go-top:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}

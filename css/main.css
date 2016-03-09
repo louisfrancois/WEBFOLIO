@@ -72,12 +72,9 @@ ul {
   margin: 0;
 }
 
-a {
-  min-height: 48px;
-  /*height: 20px;*/
-  min-width: 48px;
+/*a {
   padding: 0.8em;
-}
+}*/
 
 
 nav {
@@ -172,6 +169,7 @@ footer {
   background-repeat: no-repeat;
   background: url(../img/bg-profilepic-min.jpg) center center;
   background-attachment: fixed;
+  overflow: auto;
 }
 
 .subsection2 {
@@ -180,6 +178,8 @@ footer {
   background-repeat: no-repeat;
   background: url(../img/bg-music3-min.jpg) center center;
   background-attachment: fixed;
+  overflow: auto;
+
 }
 
 .subsection3 {
@@ -188,6 +188,7 @@ footer {
   background-repeat: no-repeat;
   background: url(../img/bg-music2-min.jpg) center center;
   background-attachment: fixed;
+  overflow: auto;
 }
 
 /* ------------------------------------------------------------------------------------ */

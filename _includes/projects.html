@@ -9,7 +9,7 @@
       <label>Filter:</label>
       <button class="filter" data-filter="all">All</button>
       <button class="filter" data-filter=".category-1">Design</button>
-      <button class="filter" data-filter=".category-2">Development</button>
+      <button class="filter" data-filter=".category-2">Development</button> 
       <button class="filter" data-filter=".category-3">Mobile</button>
       <button class="filter" data-filter=".category-4">Graph/Animation</button>
     </div>
@@ -31,8 +31,9 @@
       <div class="project-wrap">
         <div class="project-container">
           <div class="project-return">{% include icons/icon-arrowleft.html %}</div>
-            <h4 class="project-title"> Typo International Design Talks</h4>
+            <h4 class="project-title"> {{ project.name }} </h4>
           <div class="project-load"></div>
+          <a href="#" class="go-top">Go Top</a>
         </div>
       </div>
 
