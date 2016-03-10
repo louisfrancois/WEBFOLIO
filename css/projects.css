@@ -312,9 +312,13 @@ position: relative;
       right: 0;
       visibility: hidden;
       background-size: 15%;
-      background-color: blue;
-      overflow: hidden;
+      /*background-color: blue;*/
+      overflow: visible;
       z-index: 10000;
+
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+         -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+              box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
     }
 
 .pop_details img {
@@ -323,8 +327,11 @@ position: relative;
 
 }
 
-.back_btn {
-  position: absolute;
-  color: #fff;
-  font-size: 300px;
+.close_btn {
+    position: absolute;
+    width: 2.5%;
+    right: 60px;
+    top: 0px;
+    cursor: pointer;
+    visibility: hidden;
 }

@@ -75,7 +75,9 @@ function workLoad() {
 			
 		$('.pop_details').html(spinner).load(newHTML);
 		$('.pop_details').css({visibility: 'visible'});
-		$('.project-title').text(newTitle);
+		$('.close_btn').css({visibility: 'visible'});
+		$('#filter_back').css({visibility: 'visible'});
+		// $('.project-title').text(newTitle);
 
 		// var spinner = '<div class="loader">Loading...</div>',
 		// 	newHTML = '/project/project2.html';
@@ -84,9 +86,19 @@ function workLoad() {
 
 	});
 
-	$('#filter_all').click(function() {		
+	// $('.controls').click(function() {		
+	// 	$('.pop_details').css({visibility: 'hidden'});
+	// 	$('#filter_back').css({visibility: 'hidden'});
+	// });
+
+	$('.close_btn').click(function() {		
 		$('.pop_details').css({visibility: 'hidden'});
+		$('#filter_back').css({visibility: 'hidden'});
+		$('.close_btn').css({visibility: 'hidden'});
 	});
+
+
+	
 
 }
 
