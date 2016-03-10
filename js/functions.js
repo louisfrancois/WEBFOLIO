@@ -2,6 +2,8 @@ $(function() {
 	smoothScroll(300);
 	
 	workLoad();
+	// showProjects();
+
 
 	$('.thumb-unit').click(function(e){
         e.preventDefault();
@@ -65,21 +67,26 @@ function workLoad() {
 
 	$('.thumb-unit').click(function() {
 
-		// var $this = $(this),
-		// 	newTitle = $this.find('strong').text(),
-		// 	newFolder = $this.data('folder'),
-		// 	spinner = '<div class="loader">Loading...</div>',
-		// 	newHTML = '/project/' + newFolder + '.html';
-			
-		// $('.pop_details').html(spinner).load(newHTML);
-		// $('.project-title').text(newTitle);
-
-		var spinner = '<div class="loader">Loading...</div>',
-			newHTML = '/project/project2.html';
+		var $this = $(this),
+			newTitle = $this.find('strong').text(),
+			newFolder = $this.data('folder'),
+			spinner = '<div class="loader">Loading...</div>',
+			newHTML = '/project/' + newFolder + '.html';
 			
 		$('.pop_details').html(spinner).load(newHTML);
+		$('.pop_details').css({visibility: 'visible'});
+		$('.project-title').text(newTitle);
 
+		// var spinner = '<div class="loader">Loading...</div>',
+		// 	newHTML = '/project/project2.html';
+			
+		// $('.pop_details').html(spinner).load(newHTML);
 
 	});
+
+	$('#filter_all').click(function() {		
+		$('.pop_details').css({visibility: 'hidden'});
+	});
+
 }
 

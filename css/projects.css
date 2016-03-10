@@ -304,12 +304,27 @@ position: relative;
 
     .pop_details { 
       position: absolute;
-      width: 70%;
-      height: 700px;
+      top: 180px;
+      width: 60vw;
+      height: 38vw;
       margin: 0 auto;
       left: 0;
       right: 0;
+      visibility: hidden;
+      background-size: 15%;
       background-color: blue;
+      overflow: hidden;
+      z-index: 10000;
     }
 
+.pop_details img {
+  width: 100%;
+  height: 100%;
 
+}
+
+.back_btn {
+  position: absolute;
+  color: #fff;
+  font-size: 300px;
+}
