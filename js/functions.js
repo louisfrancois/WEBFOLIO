@@ -3,6 +3,7 @@ $(function() {
 	
 	workLoad();
 	// showProjects();
+	playVideo();
 
 
 	$('.thumb-unit').click(function(e){
@@ -102,3 +103,21 @@ function workLoad() {
 
 }
 
+function playVideo() {
+	$(".close_btn").click(function(){
+	    // $("video")[0].pause();
+	    $(document).ready(function(){
+		var stopVideo = function(player) {
+			var vidSrc = player.prop('src');
+			player.prop('src', ''); // to force it to pause
+			player.prop('src', vidSrc);
+		};
+
+		// at some appropriate time later in your code
+		stopVideo($('#video'));
+
+		});
+    });
+
+
+}
