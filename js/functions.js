@@ -115,8 +115,10 @@ function playVideo() {
 
 		// at some appropriate time later in your code
 		stopVideo($('#video'));
+		stopVideo($('#video2'));
 
 		});
+
     });
 
 
