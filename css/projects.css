@@ -188,9 +188,9 @@ position: relative;
                     padding: 20px;
                     color: white;
                     font-weight: 300;
-                    /*text-transform: uppercase;*/
+                    text-transform: capitalize;
                     font-size: 24px;
-                    font-family: 'Futura';
+                    font-family: 'Open Sans';
                     line-height: 1.2;
 
                   }
