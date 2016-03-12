@@ -414,7 +414,7 @@ video h1 {
 
 /************************** PROJECT 1 **************************/
 
-.proj1-container {
+.proj1-container, .proj4-container {
   width: 680px;
   margin: 0px auto;
   position: absolute;
@@ -435,14 +435,28 @@ video h1 {
   border-radius: 10px;
 }
 
+.proj1-container > .screen4 {
+  width: 460px;
+  height: 280px;
+  position: relative;  
+  background-image: url('/img/project-img/project4/ezgifplanner.gif');
+  background-size: cover;
+  border: 20px solid #474e5d;
+  border-radius: 10px;
+}
 
-.proj1-container .monitor > div {
+
+.proj1-container .monitor > div,
+.proj4-container .monitor > div {
   position: absolute;
 }
 
 .proj1-container .monitor:before,
 .proj1-container .monitor:after,
-.proj1-container .laptop:before{
+.proj1-container .laptop:before,
+.proj4-container .monitor:before,
+.proj4-container .monitor:after,
+.proj4-container .laptop:before, {
    content: "";
    position: absolute;
    left: 50%;
@@ -668,7 +682,7 @@ video h1 {
   z-index: 999;
 }
 
-.laptop {
+.proj1-container .laptop {
   /*width: 235px;
   height: 155px;*/
   width: 350px;
@@ -684,6 +698,7 @@ video h1 {
   background-image: url('/img/project-img/project1/ezgifdashB.gif');
   background-size: cover;
 }
+
 
 .laptop:before {
  top: -6px;
@@ -953,6 +968,18 @@ video h1 {
 }
 
 .proj1-bg {
+  height: 100%;
+  width: 100%;
+  background: url(../img/desk-min.jpeg) no-repeat center center;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  overflow: auto;
+}
+
+.proj2-bg {
   height: 100%;
   width: 100%;
   background: url(../img/desk-min.jpeg) no-repeat center center;

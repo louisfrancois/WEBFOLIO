@@ -9,7 +9,7 @@
   padding: 0;
 }
 
-header {
+/*header {
   height: 100vh;
   width: 100%;
   background: url(../img/header-bg-min.jpg) center;
@@ -19,22 +19,82 @@ header {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
-}
+}*/
 
-        header h1 {
+        /*header h1 {
           text-align: center;
-          text-transform: uppercase;
+          text-transform: capitalize;
           color: #fff;
           font-size: 80px;
-          font-family: Arial;
+          font-family: 'Roboto';
           letter-spacing: 0.05em;
           line-height: 700px;
-        }
+        }*/
 
-        header h1 span {
+        /*header h1 span {
           padding: 0.25em;
-          border: #fff solid 10px;
-        }
+          border: #fff solid 5px;
+
+          text-shadow: -1px 1.1px rgba(74, 74, 74, 0.145) , 
+                        -2px 2.2px rgba(79, 79, 79, 0.14) , 
+                       -3px 3.3px rgba(85, 85, 85, 0.135) , 
+                       -4px 4.4px rgba(90, 90, 90, 0.13) , 
+                       -5px 5.5px rgba(96, 96, 96, 0.125) , 
+                       -6px 6.6px rgba(102, 102, 102, 0.12) , 
+                       -7px 7.7px rgba(107, 107, 107, 0.115) , 
+                       -8px 8.8px rgba(113, 113, 113, 0.11) , 
+                       -9px 9.9px rgba(118, 118, 118, 0.105) , 
+                       -10px 11px rgba(124, 124, 124, 0.1) , 
+                       -11px 12.1px rgba(130, 130, 130, 0.095) , 
+                       -12px 13.2px rgba(135, 135, 135, 0.09) , 
+                       -13px 14.3px rgba(141, 141, 141, 0.085) , 
+                       -14px 15.4px rgba(147, 147, 147, 0.08) , -15px 16.5px rgba(152, 152, 152, 0.075) , -16px 17.6px rgba(158, 158, 158, 0.07) , -17px 18.7px rgba(163, 163, 163, 0.065) , -18px 19.8px rgba(169, 169, 169, 0.06) , -19px 20.9px rgba(175, 175, 175, 0.055) , -20px 22px rgba(180, 180, 180, 0.05) , -21px 23.1px rgba(186, 186, 186, 0.045) , -22px 24.2px rgba(191, 191, 191, 0.04) , -23px 25.3px rgba(197, 197, 197, 0.035) , -24px 26.4px rgba(203, 203, 203, 0.03) , -25px 27.5px rgba(208, 208, 208, 0.025) , -26px 28.6px rgba(214, 214, 214, 0.02) , -27px 29.7px rgba(219, 219, 219, 0.015) , -28px 30.8px rgba(225, 225, 225, 0.01) , -29px 31.9px rgba(231, 231, 231, 0.005) , -30px 33px rgba(236, 236, 236, 0);
+          color: #131313;
+        }*/
+
+#hero1 {
+  height: 100vh;
+  width: 100%;
+  background:url(../img/header-bg-min.jpg);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  text-align: center;
+}
+
+/*.hero {
+  text-align:center; 
+  position:relative;
+  width: 100%;
+  background: rgba(0,0,0,0.7) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
+}*/
+
+.inner {
+  height: 100vh;
+  width: 100%;
+  min-height:600px;
+  position: relative;
+  background: rgba(0,0,0,0.3) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
+}
+
+.copy{
+  position:absolute; 
+  top:50%; 
+  height:10em; 
+  margin-top:-5em; 
+  width:100%;
+  font-family: Roboto;
+}
+
+.hero h1 {
+  color:#fff;
+  font-size: 100px;
+} 
+
+.hero p{ 
+  color:#fff;
+  font-size: 30px;
+}
 
 body, html {
   margin: 0;
