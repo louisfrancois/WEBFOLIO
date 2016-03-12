@@ -445,6 +445,10 @@ video h1 {
   border-radius: 10px;
 }
 
+.screen4:hover {
+  background-image: rgba(0,0,0,0.5) url('/img/project-img/project4/ezgifplanner.gif');
+}
+
 
 .proj1-container .monitor > div,
 .proj4-container .monitor > div {
@@ -885,8 +889,37 @@ video h1 {
   border-right: 5px solid #2f343e;
 }
 
+.phone2 {
+  /*width: 70px;
+  height: 140px;*/
+  width: 281px;
+  height: 552px;
+  position: absolute;
+  /*bottom: -90px;
+  left: -30px;*/
+  bottom: -530px;
+  right: -180px;
+  border-radius: 5px;
+  background: #000;
+  border: 25px solid #2f343e;
+  border-left: 5px solid #2f343e;
+  border-right: 5px solid #2f343e;
+
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+         -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+              box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
 .phone:before,
 .phone:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  background: #474e5d;
+}
+
+.phone2:before,
+.phone2:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -902,7 +935,24 @@ video h1 {
   border-radius: 2px;
 }
 
+.phone2:before {
+  background: #474e5d;
+  width: 20px;
+  height: 4px;
+  margin-left: -10px;
+  top: -12px;
+  border-radius: 2px;
+}
+
 .phone:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  bottom: -18px;
+  margin-left: -5px;
+}
+
+.phone2:after {
   width: 10px;
   height: 10px;
   border-radius: 10px;
@@ -923,7 +973,29 @@ video h1 {
 
 }
 
+.phone2 .screen2 {
+  /*width: 60px;
+  height: 90px;*/
+  width: 271px;
+  height: 502px;
+  position: relative;
+  overflow: hidden;
+  /*background-color: red;*/
+  background-image: url('/img/project-img/project2/ezgiffontvid.gif');
+  background-size: cover;
+
+}
+
+
+
 .phone .content {
+  background: #fff;
+  width: 60px;
+  left: 0%;
+  margin-left: 0px;
+}
+
+.phone2 .content {
   background: #fff;
   width: 60px;
   left: 0%;
@@ -979,10 +1051,22 @@ video h1 {
   overflow: auto;
 }
 
-.proj2-bg {
+.proj4-bg {
   height: 100%;
   width: 100%;
   background: url(../img/desk-min.jpeg) no-repeat center center;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  overflow: auto;
+}
+
+.proj2-bg {
+  height: 100%;
+  width: 100%;
+  background: url(../img/fontndetails.png) no-repeat center center;
   filter: blur(1px);
   -webkit-filter: blur(1px);
   background-size: cover;
