@@ -78,6 +78,7 @@ function workLoad() {
 		$('.pop_details').css({visibility: 'visible'});
 		$('.close_btn').css({visibility: 'visible'});
 		$('#filter_back').css({visibility: 'visible'});
+		$('.project-overlay').css({visibility: 'visible'});
 		// $('.project-title').text(newTitle);
 
 		// var spinner = '<div class="loader">Loading...</div>',
@@ -96,6 +97,7 @@ function workLoad() {
 		$('.pop_details').css({visibility: 'hidden'});
 		$('#filter_back').css({visibility: 'hidden'});
 		$('.close_btn').css({visibility: 'hidden'});
+		$('.project-overlay').css({visibility: 'hidden'});
 	});
 
 

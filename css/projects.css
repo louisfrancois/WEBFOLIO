@@ -195,6 +195,15 @@ position: relative;
 
                   }
 
+                  .project-overlay {
+                    position: absolute;
+                    width: 100%;
+                    height: 1000px;
+                    background: rgba(0, 0, 0, 0.8);
+                    z-index: 10;
+                    visibility: hidden;
+                  }
+
                   .thumb-unit:hover .thumb-overlay {
                     /*top: 0%;
                     right: 0px;
@@ -306,7 +315,7 @@ position: relative;
 
     .pop_details { 
       position: absolute;
-      top: 180px;
+      bottom: -880px;
       width: 60vw;
       height: 38vw;
       margin: 0 auto;
@@ -892,7 +901,7 @@ video h1 {
 .phone2 {
   /*width: 70px;
   height: 140px;*/
-  width: 281px;
+  width: 290px;
   height: 552px;
   position: absolute;
   /*bottom: -90px;
@@ -976,7 +985,7 @@ video h1 {
 .phone2 .screen2 {
   /*width: 60px;
   height: 90px;*/
-  width: 271px;
+  width: 280px;
   height: 502px;
   position: relative;
   overflow: hidden;
