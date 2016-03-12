@@ -48,7 +48,7 @@ projects:
 - {name: "Perfect Packed Suitcase", folder: 'project5', category: 'category-3', data-order: '5'}
 - {name: "The Fountain", folder: 'project6', category: 'category-4', data-order: '6'}
 - {name: 'Webfolio', folder: 'project7', category: 'category-1', data-order: '7'}
-- {name: "City Lights", folder: 'project8', category: 'category-4', data-order: '8'}
+- {name: "City Night Rides", folder: 'project8', category: 'category-4', data-order: '8'}
 
 
 
