@@ -3,7 +3,7 @@ $(function() {
 	
 	workLoad();
 	// showProjects();
-	playVideo();
+	stopDetails();
 
 
 	$('.thumb-unit').click(function(e){
@@ -63,7 +63,7 @@ function smoothScroll (duration) {
 // }
 
 function workLoad() {
-
+	
 	$.ajaxSetup({ cache: true });
 
 	$('.thumb-unit').click(function() {
@@ -78,50 +78,68 @@ function workLoad() {
 		$('.pop_details').css({visibility: 'visible'});
 		$('.close_btn').css({visibility: 'visible'});
 		$('#filter_back').css({visibility: 'visible'});
-		$('.project-overlay').css({visibility: 'visible'});
-		// $('.project-title').text(newTitle);
+		$('.project-overlay').css({cursor: 'pointer'});
+		$('.project-overlay').toggleClass('opened');
+		// $('.project-overlay').css({visibility: 'visible'});
+		$('.project-overlay').css({zIndex: '10'});
 
-		// var spinner = '<div class="loader">Loading...</div>',
-		// 	newHTML = '/project/project2.html';
-			
-		// $('.pop_details').html(spinner).load(newHTML);
 
 	});
 
-	// $('.controls').click(function() {		
-	// 	$('.pop_details').css({visibility: 'hidden'});
-	// 	$('#filter_back').css({visibility: 'hidden'});
+
+	// $('html').click(function () {
+	// 	$('.project-overlay').removeClass('opened');
+	// 	// $('.project-overlay').removeAttr('opened');
 	// });
-
-	$('.close_btn').click(function() {		
-		$('.pop_details').css({visibility: 'hidden'});
-		$('#filter_back').css({visibility: 'hidden'});
-		$('.close_btn').css({visibility: 'hidden'});
-		$('.project-overlay').css({visibility: 'hidden'});
-	});
-
-
-	
 
 }
 
-function playVideo() {
-	$(".close_btn").click(function(){
-	    // $("video")[0].pause();
-	    $(document).ready(function(){
-		var stopVideo = function(player) {
-			var vidSrc = player.prop('src');
-			player.prop('src', ''); // to force it to pause
-			player.prop('src', vidSrc);
-		};
+function stopDetails() {
+	$(".close_btn, .project-overlay").click(function() {
 
-		// at some appropriate time later in your code
-		stopVideo($('#video'));
-		stopVideo($('#video2'));
+	    $(document).ready(function() {
+			var stopVideo = function(player) {
+				var vidSrc = player.prop('src');
+				player.prop('src', ''); // to force it to pause
+				player.prop('src', vidSrc);
+			};
+
+			// at some appropriate time later in your code
+			stopVideo($('#video'));
+			stopVideo($('#video2'));
 
 		});
 
+		$('.pop_details').css({visibility: 'hidden'});
+		$('#filter_back').css({visibility: 'hidden'});
+		$('.close_btn').css({visibility: 'hidden'});
+		$('.project-overlay').css({zIndex: '-99'});
+		// $('.project-overlay').toggleClass('closed');
+
     });
+
+  //   $(".project-overlay").click(function() {
+
+	 //    $(document).ready(function() {
+		// 	var stopVideo = function(player) {
+		// 		var vidSrc = player.prop('src');
+		// 		player.prop('src', ''); // to force it to pause
+		// 		player.prop('src', vidSrc);
+		// 	};
+
+		// 	// at some appropriate time later in your code
+		// 	stopVideo($('#video'));
+		// 	stopVideo($('#video2'));
+
+		// });
+
+		// $('.pop_details').css({visibility: 'hidden'});
+		// $('#filter_back').css({visibility: 'hidden'});
+		// $('.close_btn').css({visibility: 'hidden'});
+		// $('.project-overlay').css({zIndex: '-99'});
+		// // $('.project-overlay').toggleClass('closed');
+
+  //   });
 
 
 }

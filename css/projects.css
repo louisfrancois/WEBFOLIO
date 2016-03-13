@@ -131,7 +131,7 @@ position: relative;
         padding: 30px 0px;
         color: #367cb5;
         font-size: 20px;
-        font-family: 'Arial', cursive;
+        font-family: 'Poiret One', cursive;
         
       }
 
@@ -200,8 +200,9 @@ position: relative;
                     width: 100%;
                     height: 1000px;
                     background: rgba(0, 0, 0, 0.8);
-                    z-index: 10;
+                    /*z-index: 10;*/
                     visibility: hidden;
+                    /*opacity: 0;*/
                   }
 
                   .thumb-unit:hover .thumb-overlay {
@@ -350,6 +351,20 @@ position: relative;
     visibility: hidden;
 }
 
+/*.project-overlay.closed {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}*/
+
+.project-overlay.opened {
+  visibility: visible ;
+  opacity: 1;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
 video { 
     position: absolute;
     top: 50%;
@@ -442,6 +457,10 @@ video h1 {
   background-size: cover;
   border: 20px solid #474e5d;
   border-radius: 10px;
+
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+         -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+              box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
 .proj1-container > .screen4 {
@@ -452,6 +471,10 @@ video h1 {
   background-size: cover;
   border: 20px solid #474e5d;
   border-radius: 10px;
+
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+         -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+              box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
 .screen4:hover {
@@ -495,12 +518,14 @@ video h1 {
 }
 
 .proj1-container .content {
-  width: 420px;
+  /*width: 420px;*/
+  width: 100%;
   height: 240px;
-  left: 50%;
-  margin-left: -210px;
+  /*left: 50%;
+  margin-left: -210px;*/
   overflow: hidden;
   cursor: pointer;
+  position: absolute;
 }
 
 .proj1-container .content:before {
@@ -710,6 +735,10 @@ video h1 {
 
   background-image: url('/img/project-img/project1/ezgifdashB.gif');
   background-size: cover;
+
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+         -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+              box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
 
@@ -756,6 +785,10 @@ video h1 {
   border-radius: 0 0 20px 20px;
   background: #f4f5f7;
   z-index: 1;
+
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+         -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+              box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
 .proj1-container .btm:before {
@@ -896,6 +929,10 @@ video h1 {
   border: 25px solid #2f343e;
   border-left: 5px solid #2f343e;
   border-right: 5px solid #2f343e;
+
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+         -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+              box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
 .phone2 {
