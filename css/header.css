@@ -180,10 +180,9 @@ footer {
     }
 
 .icon-downarrow {
-  position: fixed;
-  left:45%;
-  bottom: 0;
-  line-height: 680px;
+  position: absolute;
+  left:45.5%;
+  line-height: 80px;
   /*text-align: center;*/
 
   -webkit-animation:icon-downarrow 1.5s infinite;
