@@ -316,7 +316,7 @@ position: relative;
 
     .pop_details { 
       position: absolute;
-      bottom: -880px;
+      bottom: -820px;
       width: 60vw;
       height: 38vw;
       margin: 0 auto;
@@ -956,8 +956,8 @@ video h1 {
   position: absolute;
   /*bottom: -90px;
   left: -30px;*/
-  bottom: -530px;
-  right: -180px;
+  bottom: -509px;
+  right: -115px;
   border-radius: 5px;
   background: #000;
   border: 25px solid #2f343e;
@@ -1232,6 +1232,7 @@ video h1 {
     width: 440px;
     bottom: 35px;
     font-weight: bold;
+    color: #fff;
 }
 
 .proj1-title p {
