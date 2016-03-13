@@ -481,6 +481,19 @@ video h1 {
   background-image: rgba(0,0,0,0.5) url('/img/project-img/project4/ezgifplanner.gif');
 }
 
+.proj1-container > .screen3 {
+  width: 460px;
+  height: 280px;
+  position: relative;  
+  background-image: url('/img/project-img/project3/ezgifquikst.gif');
+  background-size: cover;
+  border: 20px solid #474e5d;
+  border-radius: 10px;
+
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+         -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+              box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
 
 .proj1-container .monitor > div,
 .proj4-container .monitor > div {
@@ -956,6 +969,27 @@ video h1 {
               box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
+.phone3 {
+  /*width: 70px;
+  height: 140px;*/
+  width: 260px;
+  height: 495px;
+  position: absolute;
+  /*bottom: -90px;
+  left: -30px;*/
+  bottom: -200px;
+  right: -15%;
+  border-radius: 5px;
+  background: #000;
+  border: 25px solid #2f343e;
+  border-left: 5px solid #2f343e;
+  border-right: 5px solid #2f343e;
+
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+         -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+              box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+}
+
 .phone:before,
 .phone:after {
   content: "";
@@ -966,6 +1000,14 @@ video h1 {
 
 .phone2:before,
 .phone2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  background: #474e5d;
+}
+
+.phone3:before,
+.phone3:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -990,6 +1032,15 @@ video h1 {
   border-radius: 2px;
 }
 
+.phone3:before {
+  background: #474e5d;
+  width: 20px;
+  height: 4px;
+  margin-left: -10px;
+  top: -12px;
+  border-radius: 2px;
+}
+
 .phone:after {
   width: 10px;
   height: 10px;
@@ -999,6 +1050,14 @@ video h1 {
 }
 
 .phone2:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  bottom: -18px;
+  margin-left: -5px;
+}
+
+.phone3:after {
   width: 10px;
   height: 10px;
   border-radius: 10px;
@@ -1032,6 +1091,19 @@ video h1 {
 
 }
 
+.phone3 .screen3 {
+  /*width: 60px;
+  height: 90px;*/
+  width: 251px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  /*background-color: red;*/
+  background-image: url('/img/project-img/project3/ezgifquikstmobile.gif');
+  background-size: cover;
+
+}
+
 
 
 .phone .content {
@@ -1042,6 +1114,13 @@ video h1 {
 }
 
 .phone2 .content {
+  background: #fff;
+  width: 60px;
+  left: 0%;
+  margin-left: 0px;
+}
+
+.phone3 .content {
   background: #fff;
   width: 60px;
   left: 0%;
@@ -1121,6 +1200,18 @@ video h1 {
   overflow: auto;
 }
 
+.proj3-bg {
+  height: 100%;
+  width: 100%;
+  background: url(http://www.colorado.edu/law/profiles/cu_law/themes/law/images/background.jpg) no-repeat center center;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  overflow: auto;
+}
+
 .proj1-title {
   position: absolute;
   font-family: "Roboto";
@@ -1132,8 +1223,25 @@ video h1 {
   font-weight: bold;
 }
 
+.proj3-title {
+    position: absolute;
+    font-family: "Roboto";
+    font-size: 40px;
+    z-index: 99;
+    left: 50px;
+    width: 440px;
+    bottom: 35px;
+    font-weight: bold;
+}
+
 .proj1-title p {
   font-size: 20px;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.proj3-title p {
+  font-size: 15px;
   text-align: justify;
   margin-top: 10px;
 }

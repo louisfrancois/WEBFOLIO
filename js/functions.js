@@ -2,7 +2,6 @@ $(function() {
 	smoothScroll(300);
 	
 	workLoad();
-	// showProjects();
 	stopDetails();
 
 
@@ -40,27 +39,6 @@ function smoothScroll (duration) {
 	});
 }
 
-// function projectBelt() {
-
-// 	$('.thumb-unit').click(function() {
-
-// 		$('.project-belt').css('left', '-100%');
-// 		$('.project-container').show();
-// 	});
-
-// 	$('.project-return').click(function() {
-
-// 		$('.project-belt').css('left', '0%');
-// 		$('.project-container').hide(2000);
-// 	});
-
-// 	$('#projects').click(function() {
-
-// 		$('.project-belt').css('left', '0%');
-// 		$('.project-container').hide(2000);
-// 	});
-
-// }
 
 function workLoad() {
 	
@@ -118,28 +96,26 @@ function stopDetails() {
 
     });
 
-  //   $(".project-overlay").click(function() {
 
-	 //    $(document).ready(function() {
-		// 	var stopVideo = function(player) {
-		// 		var vidSrc = player.prop('src');
-		// 		player.prop('src', ''); // to force it to pause
-		// 		player.prop('src', vidSrc);
-		// 	};
+	function pdfViewer() {
+		$wnd.PDFJS.getDocument('img/resume.pdf').then(function(pdf) {
+		  	pdf.getPage(1).then(function(page) {
+			    var scale = 1.5;
+			    var viewport = page.getViewport(scale);
 
-		// 	// at some appropriate time later in your code
-		// 	stopVideo($('#video'));
-		// 	stopVideo($('#video2'));
+			    var canvas = document.getElementById('the-canvas');
+			    var context = canvas.getContext('2d');
+			    canvas.height = viewport.height;
+			    canvas.width = viewport.width;
 
-		// });
+			    var renderContext = {
+			      canvasContext: context,
+			      viewport: viewport
+			    };
 
-		// $('.pop_details').css({visibility: 'hidden'});
-		// $('#filter_back').css({visibility: 'hidden'});
-		// $('.close_btn').css({visibility: 'hidden'});
-		// $('.project-overlay').css({zIndex: '-99'});
-		// // $('.project-overlay').toggleClass('closed');
-
-  //   });
-
+			    page.render(renderContext);
+		  	});
+		});
+	}
 
 }
