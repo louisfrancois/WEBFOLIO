@@ -14,7 +14,7 @@ function setBindings() {
 			      		scrollTop: $("#" + sectionID).offset().top
 		      	}, 1000);
 
-  		})
+  		});
 
 }
 
