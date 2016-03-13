@@ -1,6 +1,6 @@
 $(function() {
 
-	
+
 	smoothScroll(300);
 	
 	workLoad();
@@ -25,7 +25,6 @@ $(function() {
     });
 
     $('html, body').animate({scrollTop:$(document).height()}, 1000);
-
 });
 
 function smoothScroll (duration) {

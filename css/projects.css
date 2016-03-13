@@ -956,8 +956,8 @@ video h1 {
   position: absolute;
   /*bottom: -90px;
   left: -30px;*/
-  bottom: -509px;
-  right: -115px;
+  top: -40px;
+  left: -70px;
   border-radius: 5px;
   background: #000;
   border: 25px solid #2f343e;
