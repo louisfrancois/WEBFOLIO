@@ -41,14 +41,14 @@ seo:
 # Projects Section
 
 projects:
-- {name: MyProject 1, folder: 'project1', category: 'category-1', data-order: '1'}
-- {name: MyProject 2, folder: 'project2', category: 'category-2', data-order: '2'}
-- {name: MyProject 3, folder: 'project3', category: 'category-3', data-order: '3'}
-- {name: MyProject 4, folder: 'project4', category: 'category-2', data-order: '4'}
-- {name: MyProject 5, folder: 'project5', category: 'category-3', data-order: '5'}
-- {name: MyProject 6, folder: 'project6', category: 'category-4', data-order: '6'}
-- {name: MyProject 7, folder: 'project7', category: 'category-1', data-order: '7'}
-- {name: MyProject 8, folder: 'project8', category: 'category-2', data-order: '8'}
+- {name: 'Apt Abode', folder: 'project1', category: 'category-1', data-order: '1'}
+- {name: "Font'N", folder: 'project2', category: 'category-2', data-order: '2'}
+- {name: "Quikst", folder: 'project3', category: 'category-3', data-order: '3'}
+- {name: "myCUplanner", folder: 'project4', category: 'category-1', data-order: '4'}
+- {name: "Perfect Packed Suitcase", folder: 'project5', category: 'category-3', data-order: '5'}
+- {name: "The Fountain", folder: 'project6', category: 'category-4', data-order: '6'}
+- {name: 'Webfolio', folder: 'project7', category: 'category-1', data-order: '7'}
+- {name: "City Night Rides", folder: 'project8', category: 'category-4', data-order: '8'}
 
 
 
