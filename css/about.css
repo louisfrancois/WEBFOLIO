@@ -2,9 +2,14 @@
   margin: 0 0 0 0;
   padding: 0 auto;
   width: 100%;
-  height: 800px;
+  height: 1200px;
   background: #fff;
   position: relative;
+
+/*    background-image: url("../img/music_doodle.png");
+    background-attachment: fixed;
+    background-size: 15%;
+    background-repeat: repeat;*/
 
  }
 
@@ -29,7 +34,7 @@
         .face-img {
         size: 200px;
         background: url(../img/face-img.png);
-
+        order: 2;
         border-radius: 100%;
         border: 2px solid #FFF;
         width: 200px;
@@ -48,5 +53,42 @@
         margin: 50px auto;
         font-size: 20px;
         line-height: 200%;
+        text-align: justify;
+        letter-spacing: 0.1em;
 
     }
+
+    .linkedin_logo {
+        /*background-image: url(../img/linkedin_logo.svg);*/
+        background-size: auto 100%;
+        font-size: 100px;
+        order: 1;
+        width: 0.7em;
+        height: 0.7em;
+        vertical-align: middle;
+        margin: 80px;
+        cursor: pointer;
+    }
+
+    .linkedin_logo:hover {
+        opacity: 0.7;
+    }
+
+    .github_logo {
+        /*background-image: url(../img/github_logo.svg);*/
+        background-size: auto 100%;
+        font-size: 100px;
+        order: 3;
+        width: 0.7em;
+        height: 0.7em;
+        vertical-align: middle;
+        margin: 80px;
+        cursor: pointer;
+    }
+
+    .github_logo:hover {
+        opacity: 0.7;
+    }
+
+
+
