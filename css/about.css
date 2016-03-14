@@ -26,6 +26,12 @@
 
     }
 
+    .face-lockup a {
+        padding: 0px;
+        min-height: 0;
+        min-width: 0;
+    }
+
         .face-img {
         size: 200px;
         background: url(../img/face-img.png);
@@ -47,7 +53,7 @@
         padding: 0 15px;
         margin: 50px auto;
         font-size: 20px;
-        line-height: 200%;
+        line-height: 150%;
         text-align: justify;
         letter-spacing: 0.1em;
 
