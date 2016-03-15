@@ -91,39 +91,196 @@
         opacity: 0.7;
     }
 
+    .media_links {
+        display: none;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .media_links a {
+        padding: 0px;
+    }
+
+    .media_links .linkedin_logo {
+        /* background-image: url(../img/linkedin_logo.svg); */
+        background-size: auto 100%;
+        font-size: 100px;
+        order: 1;
+        width: 0.7em;
+        height: 0.7em;
+        vertical-align: middle;
+        /* margin: 80px; */
+        cursor: pointer;
+    }
+
+    .media_links .github_logo {
+        /* background-image: url(../img/linkedin_logo.svg); */
+        background-size: auto 100%;
+        font-size: 100px;
+        order: 1;
+        width: 0.7em;
+        height: 0.7em;
+        vertical-align: middle;
+        /* margin: 80px; */
+        cursor: pointer;
+        display: none;
+    }
+
+
 
 /***** MEDIA QUERIES ****/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+@media screen and (max-width: 360px) {
+        .me {
+        margin: 0 0 0 0;
+        padding: 0 auto;
+        width: 100%;
+        height: 1120px;
+        background: #fff;
+        position: relative;
+    }
+    .me h3 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #367cb5;
+        font-size: 100;
+        font-family: 'Poiret One', cursive;
+        padding: 50px 0 50px;
+    }
 
-@media screen and (max-width: 868px) {
-  .blurb {
-      /* max-width: 900px; */
-      padding: 0 65px;
-      margin: 50px auto;
-      font-size: 20px;
-      line-height: 150%;
-      text-align: justify;
-      letter-spacing: 0.1em;
-  }
-}
+    .blurb {
+        /* max-width: 900px; */
+        padding: 0 40px;
+        margin: 40px auto;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: justify;
+        letter-spacing: 0.1em;
+    }
 
+    .face-img {
+        size: 200px;
+        background: url(../img/face-img.png);
+        order: 2;
+        border-radius: 100%;
+        border: 2px solid #FFF;
+        width: 150px;
+        height: 150px;
+        background-size: cover;
+        display: inline-block;
+    }
 
-/***** MEDIA QUERIES ****/
-/*********************************************************************************************************/
-/*********************************************************************************************************/
-/*********************************************************************************************************/
-/*********************************************************************************************************/
-/*********************************************************************************************************/
-/*********************************************************************************************************/
-/*********************************************************************************************************/
-/*********************************************************************************************************/
-/*********************************************************************************************************/
-@media screen and (min-width: 321px) and (max-width: 360px) {
+    .face-lockup .github_logo {
+        /* background-image: url(../img/github_logo.svg); */
+        background-size: auto 100%;
+        font-size: 100px;
+        order: 3;
+        width: 0.7em;
+        height: 0.7em;
+        vertical-align: middle;
+        margin: 60px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .face-lockup .linkedin_logo {
+        /* background-image: url(../img/linkedin_logo.svg); */
+        background-size: auto 100%;
+        font-size: 100px;
+        order: 1;
+        width: 0.7em;
+        height: 0.7em;
+        vertical-align: middle;
+        margin: 60px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .media_links {
+        display: block;
+    }
 
 }
 
 
 @media screen and (min-width: 361px) and (max-width: 603px) {
+    .me {
+        margin: 0 0 0 0;
+        padding: 0 auto;
+        width: 100%;
+        height: 870px;
+        background: #fff;
+        position: relative;
+    }
+    .me h3 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #367cb5;
+        font-size: 100;
+        font-family: 'Poiret One', cursive;
+        padding: 60px 0 60px;
+    }
 
+    .blurb {
+        /* max-width: 900px; */
+        padding: 0 65px;
+        margin: 50px auto;
+        font-size: 15px;
+        line-height: 150%;
+        text-align: justify;
+        letter-spacing: 0.1em;
+    }
+    .github_logo {
+        /* background-image: url(../img/github_logo.svg); */
+        background-size: auto 100%;
+        font-size: 100px;
+        order: 3;
+        width: 0.7em;
+        height: 0.7em;
+        vertical-align: middle;
+        margin: 60px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .linkedin_logo {
+        /* background-image: url(../img/linkedin_logo.svg); */
+        background-size: auto 100%;
+        font-size: 100px;
+        order: 1;
+        width: 0.7em;
+        height: 0.7em;
+        vertical-align: middle;
+        margin: 60px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .face-lockup .linkedin_logo {
+        /* background-image: url(../img/linkedin_logo.svg); */
+        background-size: auto 100%;
+        font-size: 100px;
+        order: 1;
+        width: 0.7em;
+        height: 0.7em;
+        vertical-align: middle;
+        margin: 60px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .media_links {
+        display: block;
+    }
 }
 
 
@@ -132,9 +289,24 @@
 }
 
 @media screen and (min-width: 728px) and (max-width: 800px) {
-
+        .me h3 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #367cb5;
+        font-size: 100;
+        font-family: 'Poiret One', cursive;
+        padding: 60px 0 60px;
+    }
 }
 
 @media screen and (min-width: 801px) and (max-width: 868px) {
-
+      .blurb {
+          /* max-width: 900px; */
+          padding: 0 65px;
+          margin: 50px auto;
+          font-size: 20px;
+          line-height: 150%;
+          text-align: justify;
+          letter-spacing: 0.1em;
+      }
 }

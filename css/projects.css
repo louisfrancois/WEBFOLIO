@@ -1263,6 +1263,9 @@ video h1 {
 /*********************************************************************************************************/
 /*********************************************************************************************************/
 @media screen and (max-width: 360px) {
+  .projects {
+      height: 1910px;
+  }
     .projects h1 {
       text-align: center;
       text-transform: uppercase;
@@ -1272,6 +1275,14 @@ video h1 {
       font-family: 'Poiret One', cursive;
       display: none;
   }
+
+    .project-belt {
+        width: 100%;
+        position: relative;
+        left: 0%;
+        padding-right: 25px;
+        transition: 1s;
+    }
 
     label {
       font-weight: 300;
@@ -1295,14 +1306,28 @@ video h1 {
       border-radius: 0px;
       cursor: pointer;
   }
+
+    .thumb-unit {
+    width: 100%;
+    height: 20vh;
+    padding-top: 17%;
+    display: block;
+    position: relative;
+  }
+
+  .thumb-wrap {
+      width: 100%;
+      float: left;
+      padding-left: 0px;
+  }
 }
 
 
 @media screen and (min-width: 361px) and (max-width: 603px) {
     .projects {
-        height: 2115px;
+        height: 2315px;
     }
-    
+
     .projects h1 {
       text-align: center;
       text-transform: uppercase;
@@ -1311,6 +1336,14 @@ video h1 {
       font-size: 20px;
       font-family: 'Poiret One', cursive;
       display: none;
+  }
+
+  .project-belt {
+      width: 100%;
+      position: relative;
+      left: 0%;
+      padding-right: 25px;
+      transition: 1s;
   }
 
     label {
