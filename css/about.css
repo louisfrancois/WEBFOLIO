@@ -96,10 +96,14 @@
         margin: 0 auto;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        left: 40px;
+        bottom: 15px;
     }
 
     .media_links a {
         padding: 0px;
+
     }
 
     .media_links .linkedin_logo {
