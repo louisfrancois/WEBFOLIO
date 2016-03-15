@@ -321,8 +321,8 @@ position: relative;
     .pop_details { 
       position: absolute;
       bottom: -820px;
-      width: 60vw;
-      height: 38vw;
+      width: 890px;
+      height: 610px;
       margin: 0 auto;
       left: 0;
       right: 0;
@@ -1278,6 +1278,23 @@ video h1 {
 /*********************************************************************************************************/
 /*********************************************************************************************************/
 @media screen and (max-width: 360px) {
+    .pop_details {
+      position: absolute;
+      bottom: -820px;
+      width: 670px;
+      height: 400px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      visibility: hidden;
+      background-size: 15%;
+      /* background-color: blue; */
+      overflow: visible;
+      z-index: 10000;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  }
   .projects {
       height: 1910px;
   }
@@ -1335,10 +1352,242 @@ video h1 {
       float: left;
       padding-left: 0px;
   }
+
+  /** PROJECT 1 **/
+
+  .keyboard {
+    display: none;
+  }
+
+  .proj1-container > .screen {
+      width: 360px;
+      height: 219px;
+      position: relative;
+      top: -29px;
+      left: -5px;
+      background-image: url('/img/project-img/project1/ezgifAptAbode.gif');
+      background-size: cover;
+      border: 20px solid #474e5d;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  }
+
+  .phone .screen {
+      width: 120px;
+      height: 210px;
+      position: relative;
+      overflow: hidden;
+      /* background-color: red; */
+      background-image: url('/img/project-img/project1/ezgifrespApt.gif');
+      background-size: cover;
+  }
+
+  .proj1-container .laptop {
+      width: 290px;
+      height: 191px;
+      /* background: #fc9252; */
+      border: 12px solid #e8ebf0;
+      border-radius: 10px 10px 0 0;
+      position: absolute;
+      bottom: -120px;
+      right: 140px;
+      z-index: 99;
+      background-image: url('/img/project-img/project1/ezgifdashB.gif');
+      background-size: cover;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  }
+
+  .proj1-container .btm {
+        width: 350px;
+        height: 10px;
+        bottom: -19px;
+        left: 105px;
+        margin-left: -148px;
+        border-radius: 0 0 20px 20px;
+        background: #f4f5f7;
+        z-index: 1;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+
+      .phone {
+        width: 130px;
+        height: 260px;
+        position: absolute;
+        bottom: -130px;
+        left: -50px;
+        border-radius: 5px;
+        background: #000;
+        border: 25px solid #2f343e;
+        border-left: 5px solid #2f343e;
+        border-right: 5px solid #2f343e;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+
+    .proj1-title {
+        position: absolute;
+        font-family: "Roboto";
+        font-size: 30px;
+        z-index: 99;
+        right: 15px;
+        width: 220px;
+        top: 20px;
+        font-weight: bold;
+    }
+
+    .proj1-title p {
+        font-size: 15px;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    /*** PROJECT 2 ***/
+
+    .phone2 {
+        width: 197px;
+        height: 385px;
+        position: absolute;
+        top: -32px;
+        left: -50px;
+        border-radius: 5px;
+        background: #000;
+        border: 25px solid #2f343e;
+        border-left: 5px solid #2f343e;
+        border-right: 5px solid #2f343e;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    .screen2 {
+        width: 187px;
+        height: 336px;
+        position: relative;
+        overflow: hidden;
+        /* background-color: red; */
+        background-image: url('/img/project-img/project2/ezgiffontvid.gif');
+        background-size: cover;
+    }
+
+    /*** PROJECT 3 ***/
+    .proj1-container > .screen3 {
+        width: 400px;
+        height: 243px;
+        position: absolute;
+        top: -30px;
+        left: -60px;
+        background-image: url('/img/project-img/project3/ezgifquikst.gif');
+        background-size: cover;
+        border: 20px solid #474e5d;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+
+    .phone3 {
+        width: 202px;
+        height: 384px;
+        position: absolute;
+        bottom: -352px;
+        right: 100px;
+        border-radius: 5px;
+        background: #000;
+        border: 25px solid #2f343e;
+        border-left: 5px solid #2f343e;
+        border-right: 5px solid #2f343e;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+    }
+
+    .phone3 .screen3 {
+        width: 192px;
+        height: 334px;
+        position: relative;
+        overflow: hidden;
+        /* background-color: red; */
+        background-image: url('/img/project-img/project3/ezgifquikstmobile.gif');
+        background-size: cover;
+    }
+
+    .proj3-title {
+        position: absolute;
+        font-family: "Roboto";
+        font-size: 40px;
+        z-index: 99;
+        left: 15px;
+        width: 385px;
+        bottom: 10px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .proj3-title p {
+        font-size: 13px;
+        text-align: justify;
+        margin-top: 10px;
+    }
+
+    /*** PROJECT 4 ***/
+    .proj1-container > .screen4 {
+        width: 460px;
+        height: 280px;
+        position: relative;
+        top: -10px;
+        left: -50px;
+        background-image: url('/img/project-img/project4/ezgifplanner.gif');
+        background-size: cover;
+        border: 20px solid #474e5d;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+
+    .proj4-title {
+        position: absolute;
+        font-family: "Roboto";
+        font-size: 26px;
+        z-index: 99;
+        right: 19px;
+        width: 160px;
+        top: 25px;
+        font-weight: bold;
+    }
+
+    .proj4-title p {
+        font-size: 20px;
+        text-align: left;
+        margin-top: 10px;
+    }
 }
 
 
 @media screen and (min-width: 361px) and (max-width: 603px) {
+      .pop_details {
+      position: absolute;
+      bottom: -820px;
+      width: 670px;
+      height: 400px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      visibility: hidden;
+      background-size: 15%;
+      /* background-color: blue; */
+      overflow: visible;
+      z-index: 10000;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  }
     .projects {
         height: 2315px;
     }
@@ -1397,10 +1646,242 @@ video h1 {
       float: left;
       padding-left: 0px;
   }
+
+  /** PROJECT 1 **/
+
+  .keyboard {
+    display: none;
+  }
+
+  .proj1-container > .screen {
+      width: 360px;
+      height: 219px;
+      position: relative;
+      top: -29px;
+      left: -5px;
+      background-image: url('/img/project-img/project1/ezgifAptAbode.gif');
+      background-size: cover;
+      border: 20px solid #474e5d;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  }
+
+  .phone .screen {
+      width: 120px;
+      height: 210px;
+      position: relative;
+      overflow: hidden;
+      /* background-color: red; */
+      background-image: url('/img/project-img/project1/ezgifrespApt.gif');
+      background-size: cover;
+  }
+
+  .proj1-container .laptop {
+      width: 290px;
+      height: 191px;
+      /* background: #fc9252; */
+      border: 12px solid #e8ebf0;
+      border-radius: 10px 10px 0 0;
+      position: absolute;
+      bottom: -120px;
+      right: 140px;
+      z-index: 99;
+      background-image: url('/img/project-img/project1/ezgifdashB.gif');
+      background-size: cover;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  }
+
+  .proj1-container .btm {
+        width: 350px;
+        height: 10px;
+        bottom: -19px;
+        left: 105px;
+        margin-left: -148px;
+        border-radius: 0 0 20px 20px;
+        background: #f4f5f7;
+        z-index: 1;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+
+      .phone {
+        width: 130px;
+        height: 260px;
+        position: absolute;
+        bottom: -130px;
+        left: -50px;
+        border-radius: 5px;
+        background: #000;
+        border: 25px solid #2f343e;
+        border-left: 5px solid #2f343e;
+        border-right: 5px solid #2f343e;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+
+    .proj1-title {
+        position: absolute;
+        font-family: "Roboto";
+        font-size: 30px;
+        z-index: 99;
+        right: 15px;
+        width: 220px;
+        top: 20px;
+        font-weight: bold;
+    }
+
+    .proj1-title p {
+        font-size: 15px;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    /*** PROJECT 2 ***/
+
+    .phone2 {
+        width: 197px;
+        height: 385px;
+        position: absolute;
+        top: -32px;
+        left: -50px;
+        border-radius: 5px;
+        background: #000;
+        border: 25px solid #2f343e;
+        border-left: 5px solid #2f343e;
+        border-right: 5px solid #2f343e;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    .screen2 {
+        width: 187px;
+        height: 336px;
+        position: relative;
+        overflow: hidden;
+        /* background-color: red; */
+        background-image: url('/img/project-img/project2/ezgiffontvid.gif');
+        background-size: cover;
+    }
+
+    /*** PROJECT 3 ***/
+    .proj1-container > .screen3 {
+        width: 400px;
+        height: 243px;
+        position: absolute;
+        top: -30px;
+        left: -60px;
+        background-image: url('/img/project-img/project3/ezgifquikst.gif');
+        background-size: cover;
+        border: 20px solid #474e5d;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+
+    .phone3 {
+        width: 202px;
+        height: 384px;
+        position: absolute;
+        bottom: -352px;
+        right: 100px;
+        border-radius: 5px;
+        background: #000;
+        border: 25px solid #2f343e;
+        border-left: 5px solid #2f343e;
+        border-right: 5px solid #2f343e;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+    }
+
+    .phone3 .screen3 {
+        width: 192px;
+        height: 334px;
+        position: relative;
+        overflow: hidden;
+        /* background-color: red; */
+        background-image: url('/img/project-img/project3/ezgifquikstmobile.gif');
+        background-size: cover;
+    }
+
+    .proj3-title {
+        position: absolute;
+        font-family: "Roboto";
+        font-size: 40px;
+        z-index: 99;
+        left: 15px;
+        width: 385px;
+        bottom: 10px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .proj3-title p {
+        font-size: 13px;
+        text-align: justify;
+        margin-top: 10px;
+    }
+
+    /*** PROJECT 4 ***/
+    .proj1-container > .screen4 {
+        width: 460px;
+        height: 280px;
+        position: relative;
+        top: -10px;
+        left: -50px;
+        background-image: url('/img/project-img/project4/ezgifplanner.gif');
+        background-size: cover;
+        border: 20px solid #474e5d;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+
+    .proj4-title {
+        position: absolute;
+        font-family: "Roboto";
+        font-size: 26px;
+        z-index: 99;
+        right: 19px;
+        width: 160px;
+        top: 25px;
+        font-weight: bold;
+    }
+
+    .proj4-title p {
+        font-size: 20px;
+        text-align: left;
+        margin-top: 10px;
+    }
 }
 
 
 @media screen and (min-width: 604px) and (max-width: 727px) {
+    .pop_details {
+      position: absolute;
+      bottom: -820px;
+      width: 670px;
+      height: 400px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      visibility: hidden;
+      background-size: 15%;
+      /* background-color: blue; */
+      overflow: visible;
+      z-index: 10000;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  }
     label {
       font-weight: 300;
       margin: 0 .4em 0 0;
@@ -1424,6 +1905,221 @@ video h1 {
   .projects {
     height: 1000px;
   }
+
+  /** PROJECT 1 **/
+
+  .keyboard {
+    display: none;
+  }
+
+  .proj1-container > .screen {
+      width: 360px;
+      height: 219px;
+      position: relative;
+      top: -29px;
+      left: -5px;
+      background-image: url('/img/project-img/project1/ezgifAptAbode.gif');
+      background-size: cover;
+      border: 20px solid #474e5d;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  }
+
+  .phone .screen {
+      width: 120px;
+      height: 210px;
+      position: relative;
+      overflow: hidden;
+      /* background-color: red; */
+      background-image: url('/img/project-img/project1/ezgifrespApt.gif');
+      background-size: cover;
+  }
+
+  .proj1-container .laptop {
+      width: 290px;
+      height: 191px;
+      /* background: #fc9252; */
+      border: 12px solid #e8ebf0;
+      border-radius: 10px 10px 0 0;
+      position: absolute;
+      bottom: -120px;
+      right: 140px;
+      z-index: 99;
+      background-image: url('/img/project-img/project1/ezgifdashB.gif');
+      background-size: cover;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  }
+
+  .proj1-container .btm {
+        width: 350px;
+        height: 10px;
+        bottom: -19px;
+        left: 105px;
+        margin-left: -148px;
+        border-radius: 0 0 20px 20px;
+        background: #f4f5f7;
+        z-index: 1;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+
+      .phone {
+        width: 130px;
+        height: 260px;
+        position: absolute;
+        bottom: -130px;
+        left: -50px;
+        border-radius: 5px;
+        background: #000;
+        border: 25px solid #2f343e;
+        border-left: 5px solid #2f343e;
+        border-right: 5px solid #2f343e;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+
+    .proj1-title {
+        position: absolute;
+        font-family: "Roboto";
+        font-size: 30px;
+        z-index: 99;
+        right: 15px;
+        width: 220px;
+        top: 20px;
+        font-weight: bold;
+    }
+
+    .proj1-title p {
+        font-size: 15px;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    /*** PROJECT 2 ***/
+
+    .phone2 {
+        width: 197px;
+        height: 385px;
+        position: absolute;
+        top: -32px;
+        left: -50px;
+        border-radius: 5px;
+        background: #000;
+        border: 25px solid #2f343e;
+        border-left: 5px solid #2f343e;
+        border-right: 5px solid #2f343e;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    .screen2 {
+        width: 187px;
+        height: 336px;
+        position: relative;
+        overflow: hidden;
+        /* background-color: red; */
+        background-image: url('/img/project-img/project2/ezgiffontvid.gif');
+        background-size: cover;
+    }
+
+    /*** PROJECT 3 ***/
+    .proj1-container > .screen3 {
+        width: 400px;
+        height: 243px;
+        position: absolute;
+        top: -30px;
+        left: -60px;
+        background-image: url('/img/project-img/project3/ezgifquikst.gif');
+        background-size: cover;
+        border: 20px solid #474e5d;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+
+    .phone3 {
+        width: 202px;
+        height: 384px;
+        position: absolute;
+        bottom: -352px;
+        right: 100px;
+        border-radius: 5px;
+        background: #000;
+        border: 25px solid #2f343e;
+        border-left: 5px solid #2f343e;
+        border-right: 5px solid #2f343e;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+    }
+
+    .phone3 .screen3 {
+        width: 192px;
+        height: 334px;
+        position: relative;
+        overflow: hidden;
+        /* background-color: red; */
+        background-image: url('/img/project-img/project3/ezgifquikstmobile.gif');
+        background-size: cover;
+    }
+
+    .proj3-title {
+        position: absolute;
+        font-family: "Roboto";
+        font-size: 40px;
+        z-index: 99;
+        left: 15px;
+        width: 385px;
+        bottom: 10px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .proj3-title p {
+        font-size: 13px;
+        text-align: justify;
+        margin-top: 10px;
+    }
+
+    /*** PROJECT 4 ***/
+    .proj1-container > .screen4 {
+        width: 460px;
+        height: 280px;
+        position: relative;
+        top: -10px;
+        left: -50px;
+        background-image: url('/img/project-img/project4/ezgifplanner.gif');
+        background-size: cover;
+        border: 20px solid #474e5d;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+
+    .proj4-title {
+        position: absolute;
+        font-family: "Roboto";
+        font-size: 26px;
+        z-index: 99;
+        right: 19px;
+        width: 160px;
+        top: 25px;
+        font-weight: bold;
+    }
+
+    .proj4-title p {
+        font-size: 20px;
+        text-align: left;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (min-width: 728px) and (max-width: 800px) {
