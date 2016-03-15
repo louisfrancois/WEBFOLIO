@@ -347,9 +347,9 @@ position: relative;
 
 .close_btn {
     position: absolute;
-    width: 2.5%;
-    right: 200px;
-    top: -30px;
+    width: 2%;
+    right: 515px;
+    bottom: -260px;
     cursor: pointer;
     z-index: 20000;
     visibility: hidden;
@@ -2619,5 +2619,17 @@ video h1 {
       margin-top: 10px;
     }
 
+}
+
+@media screen and (min-width: 869px) and (max-width: 1300px) {
+  .close_btn {
+    position: absolute;
+    width: 2%;
+    right: 150px;
+    bottom: -250px;
+    cursor: pointer;
+    z-index: 20000;
+    visibility: hidden;
+}
 }
 
