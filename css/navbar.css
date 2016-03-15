@@ -16,6 +16,20 @@
         height: 50px;
       }
 
+      .hamburger {
+          background: url(../img/hamburger.svg) center;
+          width: 39px;
+          max-width: 20%;
+          right: 16px;
+          margin-top: -21px;
+          height: 39px;
+          background-size: cover;
+          display: block;
+          position: absolute;
+          top: 10px;
+          cursor: pointer;
+      }
+
             .nav__item {
               box-sizing: border-box;
               display: inline-block;
@@ -48,3 +62,251 @@
                     text-decoration: underline;
                     color: #212121;
                   }
+
+/***** MEDIA QUERIES ****/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
+@media screen and (max-width: 360px) {
+   /**********************************/
+/************ DROPDOWN MENU START *************/
+/**********************************/
+  .nav {
+  width: 100%;
+  height: 55px;
+  position: relative;
+  transition-duration: 0.5s;
+  transition-timing-function: swing;
+  overflow: hidden;
+
+}
+.nav.open {
+  height: 280px;
+}
+.nav ul {
+  padding-top: 50px;
+}
+.nav ul li {
+  list-style: none;
+}
+.nav ul li a {
+  padding: 10px 0;
+  display: inline-block;
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.nav__item {
+  width: 100%;
+}
+
+.navToggle {
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  top: 20px;
+  /*left: 20px;*/
+  right: 0;
+  transition-duration: 0.5s;
+}
+.navToggle .icon {
+  transition-duration: 0.25s;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  top: 30px;
+  /*left: 15px;*/
+  right: 0;
+  background-color: black;
+}
+.navToggle .icon:before,
+.navToggle .icon:after {
+  transition-duration: 0.25s;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  content: "";
+}
+.navToggle .icon:before {
+  top: -7px;
+  left: 0;
+}
+.navToggle .icon:after {
+  top: 7px;
+  left: 0;
+}
+.navToggle:hover {
+  cursor: pointer;
+}
+.navToggle:hover .icon:before {
+  top: -10px;
+}
+.navToggle:hover .icon:after {
+  top: 10px;
+}
+/*.navToggle.open {
+  transition-duration: 1s;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}*/
+.navToggle.open .icon {
+  transition-duration: 0.5s;
+  background-color: transparent;
+}
+.navToggle.open .icon:before {
+  transition-duration: 0.5s;
+  top: 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.navToggle.open .icon:after {
+  transition-duration: 0.5s;
+  top: 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/**********************************/
+/************ DROPDOWN MENU END *************/
+/**********************************/
+}
+}
+
+
+@media screen and (min-width: 361px) and (max-width: 603px) {
+
+
+  /**********************************/
+/************ DROPDOWN MENU START *************/
+/**********************************/
+  .nav {
+  width: 100%;
+  height: 55px;
+  position: relative;
+  transition-duration: 0.5s;
+  transition-timing-function: swing;
+  overflow: hidden;
+
+}
+.nav.open {
+  height: 280px;
+}
+.nav ul {
+  padding-top: 50px;
+}
+.nav ul li {
+  list-style: none;
+}
+.nav ul li a {
+  padding: 10px 0;
+  display: inline-block;
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.nav__item {
+  width: 100%;
+}
+
+.navToggle {
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  top: 20px;
+  /*left: 20px;*/
+  right: 0;
+  transition-duration: 0.5s;
+}
+.navToggle .icon {
+  transition-duration: 0.25s;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  top: 30px;
+  /*left: 15px;*/
+  right: 0;
+  background-color: black;
+}
+.navToggle .icon:before,
+.navToggle .icon:after {
+  transition-duration: 0.25s;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  content: "";
+}
+.navToggle .icon:before {
+  top: -7px;
+  left: 0;
+}
+.navToggle .icon:after {
+  top: 7px;
+  left: 0;
+}
+.navToggle:hover {
+  cursor: pointer;
+}
+.navToggle:hover .icon:before {
+  top: -10px;
+}
+.navToggle:hover .icon:after {
+  top: 10px;
+}
+/*.navToggle.open {
+  transition-duration: 1s;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}*/
+.navToggle.open .icon {
+  transition-duration: 0.5s;
+  background-color: transparent;
+}
+.navToggle.open .icon:before {
+  transition-duration: 0.5s;
+  top: 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.navToggle.open .icon:after {
+  transition-duration: 0.5s;
+  top: 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/**********************************/
+/************ DROPDOWN MENU END *************/
+/**********************************/
+}
+
+
+@media screen and (min-width: 604px) and (max-width: 727px) {
+  .nav__item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 23%;
+    text-align: center;
+  }
+
+    .hamburger {
+    display: none;
+  }
+}
+
+
+
+@media screen and (min-width: 728px) and (max-width: 800px) {
+
+}
+
+@media screen and (min-width: 801px) and (max-width: 868px) {
+
+}

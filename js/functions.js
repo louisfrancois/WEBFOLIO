@@ -1,5 +1,6 @@
 $(function() {
 	smoothScroll(300);
+	navbarDown();
 	
 	workLoad();
 	stopDetails();
@@ -118,4 +119,13 @@ function stopDetails() {
 		});
 	}
 
+}
+
+function navbarDown() {
+	$(".navToggle").click (function(){
+	  	// $(this).toggleClass("open");
+	  	$('.nav__list').css({visibility: 'visible'});
+	  	$(".nav").toggleClass("open");
+	  	$(".nav").css({opacity: '1'});
+	});
 }
