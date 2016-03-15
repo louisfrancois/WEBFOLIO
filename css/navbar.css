@@ -307,8 +307,18 @@
   }
 }
 
-@media screen and (min-width: 801px) and (max-width: 868px) {
+@media screen and (min-width: 801px) {
   .hamburger {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .icon-downarrow {
+      position: absolute;
+      left: 45.5%;
+      line-height: 80px;
+      /* text-align: center; */
+      -webkit-animation: icon-downarrow 1.5s infinite;
   }
 }
