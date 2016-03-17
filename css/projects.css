@@ -3033,14 +3033,14 @@ video h1 {
 }
 
 @media screen and (min-width: 869px) and (max-width: 1300px) {
-  .close_btn {
-    position: absolute;
-    width: 2%;
-    right: 150px;
-    bottom: -250px;
-    cursor: pointer;
-    z-index: 20000;
-    visibility: hidden;
-}
+    .close_btn {
+      position: absolute;
+      width: 2%;
+      right: 10%;
+      bottom: -250px;
+      cursor: pointer;
+      z-index: 20000;
+      visibility: hidden;
+  }
 }
 
